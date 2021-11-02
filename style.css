@@ -37,3 +37,20 @@ body {
   left: 192.5px;
   top: 28.33px;
 }
+/*Стиль текса титула*/
+.information_NavBar {
+  margin-left: 531px;
+  margin-top: 26px;
+}
+.margin20 {
+  margin-right: 20px;
+}
+.margin44 {
+  margin-right: 44px;
+}
+.text__information_NavBar {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
