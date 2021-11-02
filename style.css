@@ -1,1 +1,19 @@
- 
+/*Стиль лого*/
+.icon__logo_NavBar {
+  position: relative;
+}
+.images___icon__logo_NavBar {
+  position: absolute;
+}
+.imglogo1 {
+  left: 149.41px;
+  top: 30.29px;
+}
+.imglogo2 {
+  left: 140px;
+  top: 15px;
+}
+.imglogo3 {
+  left: 161.47px;
+  top: 30.29px;
+}
