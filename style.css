@@ -1,3 +1,16 @@
+body {
+  background: url(images/image3.png) no-repeat;
+  background-size: cover;
+}
+/*Стиль верхней панельки*/
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: #fff;
+}
 /*Стиль лого*/
 .icon__logo_NavBar {
   position: relative;
@@ -16,4 +29,11 @@
 .imglogo3 {
   left: 161.47px;
   top: 30.29px;
+}
+/*Стиль текса лого*/
+.text__logo_NavBar {
+  position: absolute;
+
+  left: 192.5px;
+  top: 28.33px;
 }
