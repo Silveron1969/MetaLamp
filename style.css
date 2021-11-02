@@ -10,6 +10,7 @@ body {
   height: 70px;
   width: 100%;
   background: #fff;
+  display: flex;
 }
 /*Стиль лого*/
 .icon__logo_NavBar {
@@ -53,4 +54,34 @@ body {
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
   text-decoration: none;
+}
+/*Стили кнопок титла*/
+.login_NavBar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 18px;
+  display: flex;
+}
+.button_enter__login_NavBar {
+  font-size: 12px;
+  line-height: 15px;
+  color: #bc9cff;
+  border: 2px solid;
+
+  border-radius: 22px;
+  width: 87px;
+  height: 34px;
+}
+.button_register__login_NavBar {
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: 0px solid;
+  width: 196px;
+  height: 34px;
 }
