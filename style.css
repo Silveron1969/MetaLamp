@@ -69,11 +69,12 @@ body {
   line-height: 15px;
   color: #bc9cff;
   border: 2px solid;
-
+  background: #fff;
   border-radius: 22px;
   width: 87px;
   height: 34px;
 }
+
 .button_register__login_NavBar {
   margin-left: 20px;
   font-size: 12px;
@@ -84,4 +85,16 @@ body {
   border: 0px solid;
   width: 196px;
   height: 34px;
+}
+/*Стиль блока номера*/
+.blocknumber {
+  height: auto;
+  width: 380px;
+  margin-left: 140px;
+  margin-top: 140px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background: #fff;
 }
