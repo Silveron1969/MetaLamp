@@ -88,8 +88,12 @@ body {
 }
 /*Стиль блока номера*/
 .blocknumber {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   height: auto;
-  width: 380px;
+  width: 320px;
   margin-left: 140px;
   margin-top: 140px;
   padding-top: 40px;
@@ -97,4 +101,115 @@ body {
   padding-right: 30px;
   padding-bottom: 30px;
   background: #fff;
+}
+.blocknumber span {
+  color: #1f2041;
+}
+.text_title__blocknumber span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.input_way__blocknumber {
+  display: flex;
+  margin-top: 21px;
+}
+.input_way__blocknumber span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.arrival___input_way__blocknumber {
+  margin-right: 20px;
+}
+.arrival___input_way__blocknumber input {
+  margin-top: 5.44px;
+  width: 150px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5.44px;
+  padding-top: 11.56px;
+  padding-left: 15px;
+
+  padding-bottom: 8.44px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(31, 32, 65, 0.5);
+  opacity: 1;
+  background-image: url("images/expand_more.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: 10px;
+  margin-right: 5.5px;
+  cursor: pointer;
+}
+
+.exit__input_way__blocknumber input {
+  margin-top: 5.44px;
+  width: 150px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5.44px;
+  padding-top: 11.56px;
+  padding-left: 15px;
+
+  padding-bottom: 8.44px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.textnumberone {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.select_visit__blocknumber {
+  margin-top: 20.56px;
+}
+
+.text____button_visit___select_visit__blocknumber span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+.button_visit___select_visit__blocknumber {
+  margin-top: 13;
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.text____button_visit___select_visit__blocknumber {
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.button__blocknamber {
+  margin-top: 31px;
+}
+.button_search___button__blocknumber {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: 0px solid;
+  width: 320px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 }
