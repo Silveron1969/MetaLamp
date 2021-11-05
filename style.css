@@ -50,6 +50,9 @@ body {
   margin-right: 44px;
 }
 .text__information_NavBar {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
@@ -65,6 +68,9 @@ body {
   display: flex;
 }
 .button_enter__login_NavBar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #bc9cff;
@@ -77,8 +83,12 @@ body {
 
 .button_register__login_NavBar {
   margin-left: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+
   color: #ffffff;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
@@ -141,16 +151,34 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
-
+.block____arrival___input_way__blocknumber {
+  position: relative;
+}
+.block____arrival___input_way__blocknumber::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.block____arrival___input_way__blocknumber::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
-  color: rgba(31, 32, 65, 0.5);
-  opacity: 1;
-  background-image: url("images/expand_more.png");
-  background-repeat: no-repeat;
-  background-position: 100% center;
-  background-size: 10px;
-  margin-right: 5.5px;
-  cursor: pointer;
+  display: none;
 }
 
 .exit__input_way__blocknumber input {
@@ -167,6 +195,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 18px;
 }
+.block____exit___input_way__blocknumber {
+  position: relative;
+}
+.block____exit___input_way__blocknumber::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.block____exit___input_way__blocknumber::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
+}
 .textnumberone {
   font-family: Montserrat;
   font-style: normal;
@@ -180,7 +234,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .text____button_visit___select_visit__blocknumber span {
-  font-family: Montserrat;
+  font-family: Montserrat-normal;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -195,11 +249,59 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 4px;
 }
 .text____button_visit___select_visit__blocknumber {
+  position: relative;
   margin-top: 13px;
   margin-left: 15px;
 }
+.text____button_visit___select_visit__blocknumber::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.text____button_visit___select_visit__blocknumber::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
+}
 .button__blocknamber {
+  position: relative;
   margin-top: 31px;
+}
+.line {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 12px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-radius: 1px;
+}
+.arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  margin-right: 0px;
+  border-radius: 1px;
+}
+.arrow-right {
+  transform: rotate(45deg);
 }
 .button_search___button__blocknumber {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -212,4 +314,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+}
+/*Шрифты*/
+@font-face {
+  font-family: "Montserrat";
+  src: url(font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-normal";
+  src: url(font/Montserrat-Regular.ttf);
 }
