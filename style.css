@@ -15,21 +15,50 @@ body {
 /*Стиль лого*/
 .icon__logo_NavBar {
   position: relative;
+  display: flex;
 }
-.images___icon__logo_NavBar {
+.circle___icon__logo_NavBar {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 140px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.circle___icon__logo_NavBar::after {
   position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-top: 18px;
+  margin-left: 143px;
+  border-radius: 50%;
+  background: #fff;
 }
-.imglogo1 {
-  left: 149.41px;
-  top: 30.29px;
+.left_object___icon__logo_NavBar {
+  margin-top: 30px;
+  margin-left: -42px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  --value: 25%;
+  background: conic-gradient(#bc9cff, var(--value), transparent 0);
+  transform: rotate(0deg);
 }
-.imglogo2 {
-  left: 140px;
-  top: 15px;
-}
-.imglogo3 {
-  left: 161.47px;
-  top: 30.29px;
+.left_object___icon__logo_NavBar::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 1px;
+  --value: 25%;
+  background: conic-gradient(#fff, var(--value), transparent 0);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  z-index: 2;
+  transform: rotate(0deg);
 }
 /*Стиль текса лого*/
 .text__logo_NavBar {
