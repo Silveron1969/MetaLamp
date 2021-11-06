@@ -50,9 +50,32 @@ body {
 .left_object___icon__logo_NavBar::after {
   position: absolute;
   content: "";
-  top: 3px;
+  top: 2px;
   left: 1px;
   --value: 25%;
+  background: conic-gradient(#fff, var(--value), transparent 0);
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.right_object___icon__logo_NavBar {
+  margin-top: 30px;
+  margin-left: -3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  --value: 13%;
+  background: conic-gradient(#6dd0aa, var(--value), transparent 0);
+  transform: rotate(-50deg);
+}
+.right_object___icon__logo_NavBar::after {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 1px;
+  --value: 13%;
   background: conic-gradient(#fff, var(--value), transparent 0);
   width: 21px;
   height: 21px;
@@ -67,9 +90,30 @@ body {
   left: 192.5px;
   top: 28.33px;
 }
+.text__logo_NavBar span {
+  font-family: Montserrat-Medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 15px;
+  color: #1f2041;
+}
+.text__logo_NavBar::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+  margin-left: 19px;
+  content: "";
+  width: 2.1px;
+  height: 12px;
+  background: #1f2041;
+  transform: rotate(-45deg);
+}
 /*Стиль текса титула*/
 .information_NavBar {
-  margin-left: 531px;
+  display: flex;
+  margin-left: 285.31px;
   margin-top: 26px;
 }
 .margin20 {
@@ -77,6 +121,58 @@ body {
 }
 .margin44 {
   margin-right: 44px;
+}
+.arrow-blockone,
+.arrow-blocktwo {
+  position: relative;
+  height: 18px;
+}
+
+.arrow-blockone::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 27px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.arrow-blockone::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 27px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
+}
+.arrow-blocktwo::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 27px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+.arrow-blocktwo::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 27px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
 }
 .text__information_NavBar {
   font-family: Montserrat-normal;
@@ -352,4 +448,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @font-face {
   font-family: "Montserrat-normal";
   src: url(font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(font/Montserrat-Medium.ttf);
 }
