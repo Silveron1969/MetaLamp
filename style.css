@@ -205,7 +205,9 @@ body {
   width: 87px;
   height: 34px;
 }
-
+.button_enter__login_NavBar:hover {
+  cursor: pointer;
+}
 .button_register__login_NavBar {
   margin-left: 20px;
   font-family: Montserrat;
@@ -213,13 +215,15 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-
   color: #ffffff;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   border: 0px solid;
   width: 196px;
   height: 34px;
+}
+.button_register__login_NavBar:hover {
+  cursor: pointer;
 }
 /*Стиль блока номера*/
 .blocknumber {
@@ -320,6 +324,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 18px;
 }
+#arrival___input_way__blocknumber {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+#exit___input_way__blocknumber {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
 .block____exit___input_way__blocknumber {
   position: relative;
 }
@@ -364,14 +384,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
 }
 .button_visit___select_visit__blocknumber {
-  margin-top: 13;
+  margin-top: 5px;
   width: 320px;
   height: 44px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.button_visit___select_visit__blocknumber:hover {
+  cursor: pointer;
 }
 .text____button_visit___select_visit__blocknumber {
   position: relative;
@@ -434,11 +458,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 0px solid;
   width: 320px;
   height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
+}
+.button_search___button__blocknumber:hover {
+  cursor: pointer;
 }
 /*Шрифты*/
 @font-face {
