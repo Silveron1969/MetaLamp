@@ -708,6 +708,111 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: #1f2041;
   transform: rotate(-45deg);
 }
+/*Выбор гостей*/
+.guests-choice___select_visit__blocknumber {
+  display: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  width: 320px;
+  padding-bottom: 13px;
+  border-radius: 0px 0px 4px 4px;
+}
+.choice_guests-choice {
+  display: flex;
+}
+.text__choice_guests-choice {
+  margin-top: 13px;
+  margin-left: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.blockspan___text__choice_guests-choice {
+  margin-bottom: 22px;
+}
+.button__choice_guests-choice {
+  margin-top: 7px;
+  margin-left: 118px;
+}
+.circle-button___button__choice_guests-choice {
+  display: flex;
+  margin-bottom: 7px;
+}
+.circle-button-minus {
+  border-radius: 50%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  opacity: 0.38;
+}
+.circle-button___button__choice_guests-choice span {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 8px;
+  color: #1f2041;
+}
+.circle-button-plus {
+  border-radius: 50%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 7px;
+}
+.button_guests-choice {
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.reset__button_guests-choice {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  background: #fff;
+  padding: 0px;
+  border: none;
+}
+.apply__button_guests-choice {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  background: #fff;
+  padding: 0px;
+  border: none;
+  margin-left: 137px;
+  margin-right: 7px;
+}
 /*Шрифты*/
 @font-face {
   font-family: "Montserrat";
