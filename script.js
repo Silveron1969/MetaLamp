@@ -3,6 +3,7 @@ function DispButtonGuests() {
   document.querySelector(".button_visit___select_visit__blocknumber").style.border = "1px solid rgba(31, 32, 65, 0.5)";
   document.querySelector(".button_visit___select_visit__blocknumber").style.borderRadius = "4px 4px 0px 0px";
   document.querySelector(".button_visit___select_visit__blocknumber").style.borderBottom = "0px";
+  document.querySelector(".the-guests").innerHTML = "0 гостей";
 };
 /*кнопки плюс минус*/
 function ClickButtonMinusAdults() {
