@@ -82,10 +82,10 @@
             <span class="textnumberone">гости</span>
             <div class="button_visit___select_visit__blocknumber" onclick="DispButtonGuests()">
               <div class="text____button_visit___select_visit__blocknumber">
-                <span>Сколько гостей</span>
+                <span class="the-guests">Сколько гостей</span>
               </div>
             </div>
-            <div class="guests-choice___select_visit__blocknumber" style="display:">
+            <div class="guests-choice___select_visit__blocknumber" style="display: none">
               <div class="choice_guests-choice">
                 <div class="text__choice_guests-choice">
                   <div class="blockspan___text__choice_guests-choice">
@@ -100,19 +100,19 @@
                 </div>
                 <div class="button__choice_guests-choice">
                   <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus">-</button>
-                    <span>0</span>
-                    <button class="circle-button-plus">+</button>
+                    <button class="circle-button-minus adults_minus" onclick="ClickButtonMinusAdults()">-</button>
+                    <span class="adults-text">0</span>
+                    <button class="circle-button-plus adults_plus" onclick="ClickButtonPlusAdults()">+</button>
                   </div>
                   <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus">-</button>
-                    <span>0</span>
-                    <button class="circle-button-plus">+</button>
+                    <button class="circle-button-minus children_minus" onclick="ClickButtonMinusChildren()">-</button>
+                    <span class="children-text">0</span>
+                    <button class="circle-button-plus children_plus" onclick="ClickButtonPlusChildren()">+</button>
                   </div>
                   <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus">-</button>
-                    <span>0</span>
-                    <button class="circle-button-plus">+</button>
+                    <button class="circle-button-minus babies_minus" onclick="ClickButtonMinusBabies()">-</button>
+                    <span class="babie-text">0</span>
+                    <button class="circle-button-plus babies_plus" onclick="ClickButtonPlusBabies()">+</button>
                   </div>
                 </div>
               </div>

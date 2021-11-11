@@ -710,12 +710,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /*Выбор гостей*/
 .guests-choice___select_visit__blocknumber {
-  display: none;
+  display: ;
   position: absolute;
   background: #fff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
   width: 320px;
   padding-bottom: 13px;
   border-radius: 0px 0px 4px 4px;
@@ -758,11 +759,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(31, 32, 65, 0.5);
   width: 30px;
   height: 30px;
-  margin-right: 15px;
+
   opacity: 0.38;
+  cursor: pointer;
 }
 .circle-button___button__choice_guests-choice span {
   display: block;
+  position: absolute;
+  margin-left: 41px;
+  text-align: center;
+  text-transform: uppercase;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -783,8 +789,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(31, 32, 65, 0.5);
   width: 30px;
   height: 30px;
-  margin-left: 15px;
+  margin-left: 32px;
   margin-right: 7px;
+  cursor: pointer;
 }
 .button_guests-choice {
   margin-top: 10px;
