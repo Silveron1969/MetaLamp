@@ -265,7 +265,7 @@ body {
   text-transform: uppercase;
 }
 .arrival___input_way__blocknumber {
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .block____arrival___input_way__blocknumber {
@@ -710,13 +710,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /*Выбор гостей*/
 .guests-choice___select_visit__blocknumber {
-  display: ;
   position: absolute;
   background: #fff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-
   width: 320px;
   padding-bottom: 13px;
   border-radius: 0px 0px 4px 4px;
@@ -822,6 +820,145 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   margin-left: 137px;
   margin-right: 7px;
+}
+/*Календарь*/
+.calendar___input_way__blocknumber {
+  position: absolute;
+  width: 320px;
+  height: auto;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  margin-top: 5.56px;
+  z-index: 2;
+}
+.month__calendar_input {
+  display: flex;
+  position: relative;
+
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.line__left-block_mount {
+  position: absolute;
+  top: 9px;
+  left: -74px;
+  width: 12px;
+  height: 8px;
+  border-top: 3px solid #bc9cff;
+  border-radius: 1px;
+}
+.left-arrow__left-block_mount {
+  position: absolute;
+  top: 5px;
+  left: -75px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #bc9cff;
+  border-left: 3px solid #bc9cff;
+  margin-right: 0px;
+  border-radius: 1px;
+}
+.left-arrow__left-block_mount {
+  transform: rotate(-45deg);
+}
+.month__calendar_input span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #1f2041;
+}
+.line__right-block_mount {
+  position: absolute;
+  top: 9px;
+  left: 183px;
+  width: 12px;
+  height: 8px;
+  border-top: 3px solid #bc9cff;
+  border-radius: 1px;
+}
+.right-arrow__right-block_mount {
+  position: absolute;
+  top: 5px;
+  left: 185px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #bc9cff;
+  border-right: 3px solid #bc9cff;
+  margin-right: 0px;
+  border-radius: 1px;
+}
+.right-arrow__right-block_mount {
+  transform: rotate(45deg);
+}
+.number-calendar__calendar_input {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.weekday__table_number-calendar {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bc9cff;
+}
+.weekday,
+.number_line-one,
+.number_line-two,
+.number_line-three,
+.number_line-four,
+.number_line-five {
+  width: 37px;
+  height: 37px;
+  align-items: center;
+  text-align: center;
+}
+.number_line-one,
+.number_line-two,
+.number_line-three,
+.number_line-four,
+.number_line-five {
+  cursor: pointer;
+}
+.line-one_table,
+.line-two_table,
+.line-three_table,
+.line-four_table,
+.line-five_table {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.button__calendar_input {
+  margin-top: 20.44px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.button-reset___button__calendar_input,
+.button-accept___button__calendar_input {
+  padding: 0px 0px 0px 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border: none;
+  background: #fff;
+}
+.button-accept___button__calendar_input {
+  margin-left: 118px;
 }
 /*Шрифты*/
 @font-face {
