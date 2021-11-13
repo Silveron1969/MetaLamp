@@ -899,7 +899,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .number-calendar__calendar_input {
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 21px;
+}
+.table_number-calendar {
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
 }
 .weekday__table_number-calendar {
   font-family: Montserrat;
@@ -915,8 +921,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .number_line-three,
 .number_line-four,
 .number_line-five {
-  width: 37px;
-  height: 37px;
+  width: 37.5px;
+  height: 37.5px;
   align-items: center;
   text-align: center;
 }
@@ -926,6 +932,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .number_line-four,
 .number_line-five {
   cursor: pointer;
+  position: relative;
+}
+
+.after__number_line {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  opacity: 0.25;
+}
+.number_line-one::after {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: 0px;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  opacity: 0.25;
 }
 .line-one_table,
 .line-two_table,

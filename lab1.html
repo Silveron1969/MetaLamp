@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"> </script>
   </head>
-  <body>
+  <body onclick="TodaysDate()">
     <main>
       <div class="content_main">
         <div class="NavBar title">
@@ -81,7 +81,7 @@
               </div>
             </div>
             <div class="number-calendar__calendar_input">
-              <table class="table_number-calendar">
+              <table class="table_number-calendar" onclick="CheckBorderRadius()">
                 <tr class="weekday__table_number-calendar">
                   <td class="weekday pn">Пн</td>
                   <td class="weekday wt">Вт</td>
@@ -91,50 +91,85 @@
                   <td class="weekday sb">Сб</td>
                   <td class="weekday ws">Вс</td>
                 </tr>
-                <tr class="line-one_table" onclick="CheckBorderRadius()">
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">1</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">2</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">3</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">4</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">5</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">6</td>
-                  <td class="number_line-one" onclick="ClickNumberCalendar(this)">7</td>
+                <tr class="line-one_table">
+                  <td class="number_line-one" >
+                    <div class="after__number_line"></div>1</td>
+                  <td class="number_line-one" >
+                    <div class="after__number_line"></div>2</td>
+                  <td class="number_line-one" >
+                    <div class="after__number_line"></div>3</td>
+                  <td class="number_line-one" >
+                    <div class="after__number_line"></div>4</td>
+                  <td class="number_line-one" >
+                    <div class="after__number_line"></div>5</td>
+                  <td class="number_line-one">
+                    <div class="after__number_line"></div>6</td>
+                  <td class="number_line-one">
+                    <div class="after__number_line"></div>7</td>
                 </tr>
                 <tr class="line-two_table">
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">8</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">9</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">10</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">11</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">12</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">13</td>
-                  <td class="number_line-two" onclick="ClickNumberCalendar(this)">14</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>8</td>
+                  <td class="number_line-two" >
+                    <div class="after__number_line"></div>9</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>10</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>11</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>12</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>13</td>
+                  <td class="number_line-two">
+                    <div class="after__number_line"></div>14</td>
                 </tr>
                 <tr class="line-three_table">
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">15</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">16</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">17</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">18</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">19</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">20</td>
-                  <td class="number_line-three" onclick="ClickNumberCalendar(this)">21</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>15</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>16</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>17</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>18</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>19</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>20</td>
+                  <td class="number_line-three">
+                    <div class="after__number_line"></div>21</td>
                 </tr>
                 <tr class="line-four_table">
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">22</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">23</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">24</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">25</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">26</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">27</td>
-                  <td class="number_line-four" onclick="ClickNumberCalendar(this)">28</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>22</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>23</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>24</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>25</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>26</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>27</td>
+                  <td class="number_line-four">
+                    <div class="after__number_line"></div>28</td>
                 </tr>
                 <tr class="line-five_table">
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">29</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">30</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">1</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">2</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">3</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">4</td>
-                  <td class="number_line-five" onclick="ClickNumberCalendar(this)">5</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>29</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>30</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>1</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>2</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>3</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>4</td>
+                  <td class="number_line-five">
+                    <div class="after__number_line"></div>5</td>
                 </tr>
               </table>
             </div>

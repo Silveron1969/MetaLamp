@@ -84,28 +84,63 @@ function ClickButtonPlusBabies() {
   document.querySelector(".the-guests").innerHTML = guests + " " + word;
 }
 /*Календарь*/
-function ClickNumberCalendar(block) {
-  block.style.background = "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
-  block.style.borderRadius = "50%";
-  block.style.color = "#fff";
-}
-/*
 function CheckBorderRadius() {
-  let mas = document.querySelectorAll(".number_line-one");
+  var value = 0;
   var per = 0;
+  var mas = document.querySelectorAll(
+    ".number_line-one , .number_line-two , .number_line-three , .number_line-four , .number_line-five"
+  );
+  //var respavn = 0;
+  //for (let i = 0; i < mas.length; i++) {
+  //if (mas[i].style.borderRadius == "50%") respavn = respavn + 1;
+  //alert(respavn);
+  //}
+  //if (respavn == 2) return 0;
   for (let i = 0; i < mas.length; i++) {
+    mas[i].onclick = function () {
+      mas[i].style.background =
+        "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
+      mas[i].style.borderRadius = "50%";
+      mas[i].style.color = "#fff";
+    };
     if (mas[i].style.borderRadius == "50%") {
       per = per + 1;
     }
+    if (mas[i].style.borderRadius == "50%" && per == 1) value = i + 1;
   }
-  if (per == 2) {
-    for (let i = 0; i < mas.length; i++) {
-      if (mas[i].style.borderRadius == "50%") {
-        while () {
-          
-        }
-      }
+  if (per == 1) return 0;
+  var after = document.querySelectorAll(".after__number_line");
+  for (let i = value - 1; i < mas.length; i++) {
+    if (i == 6 || i == 13 || i == 20 || i == 27 || i == 34) {
+      after[i].style.width = "19.94px";
     }
+    after[i].style.display = "block";
+    after[i].style.left = "20px";
+    after[i].style.zIndex = "-1";
+    if (i == 0 || i == 7 || i == 14 || i == 21 || i == 28) {
+      after[i].style.width = "59.5px";
+      after[i].style.left = "0px";
+    }
+    if (mas[i + 1].style.borderRadius == "50%") break;
+
+    //mas[i].style.background =
+    //   "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
+    //mas[i].style.opacity = "0.25";
+    //mas[i].style.color = "rgba(31, 32, 65, 0.5)";
   }
 }
-*/
+window.onload = function TodaysDate() {
+  let now = new Date();
+  let day = now.getDate();
+  var mas = document.querySelectorAll(
+    ".number_line-one , .number_line-two , .number_line-three , .number_line-four , .number_line-five"
+  );
+  for (let i = 0; i < mas.length; i++) {
+    if (parseFloat(mas[i].textContent) == day) {
+      mas[i].style.borderRadius = "22px";
+      mas[i].style.background =
+        "linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)";
+      mas[i].style.color = "#fff";
+    }
+  }
+};
