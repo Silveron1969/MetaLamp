@@ -815,6 +815,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*Календарь*/
 .calendar___input_way__blocknumber {
   position: absolute;
+  display: none;
   width: 320px;
   height: auto;
   background: #fff;
@@ -887,6 +888,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: rotate(45deg);
 }
 .number-calendar__calendar_input {
+  display: ;
+  position: ;
   margin-top: 30px;
   margin-left: 21px;
 }

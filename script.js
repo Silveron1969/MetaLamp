@@ -11,7 +11,8 @@ function DispButtonGuests() {
   document.querySelector(
     ".button_visit___select_visit__blocknumber"
   ).style.borderBottom = "0px";
-  document.querySelector(".the-guests").innerHTML = "0 гостей";
+  if (document.querySelector(".the-guests").textContent == "Сколько гостей")
+    document.querySelector(".the-guests").innerHTML = "0 гостей";
 }
 /*кнопки плюс минус*/
 function ClickButtonMinusAdults() {
@@ -98,6 +99,8 @@ function CheckBorderRadius() {
   else {
     for (let i = 0; i < mas.length; i++) {
       mas[i].onclick = function () {
+        let now = new Date();
+        let day = now.getDate();
         var mas = document.querySelectorAll(
           ".number_line-one , .number_line-two , .number_line-three , .number_line-four , .number_line-five"
         );
@@ -106,6 +109,7 @@ function CheckBorderRadius() {
           if (mas[i].style.borderRadius == "50%") check = check + 1;
         }
         if (check == 2) return 0;
+        if (mas[i].textContent < day) return 0;
         mas[i].style.background =
           "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
         mas[i].style.borderRadius = "50%";
@@ -149,3 +153,8 @@ window.onload = function TodaysDate() {
     }
   }
 };
+function СallingСalendar() {
+  var per = document.querySelector(".calendar___input_way__blocknumber");
+  if (per.style.display == "none") per.style.display = "block";
+  else per.style.display = "none";
+}
