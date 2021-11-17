@@ -2,7 +2,6 @@ body {
   background: url(images/image3.png) no-repeat;
   background-size: cover;
 }
-
 /*Стиль верхней панельки*/
 .title {
   position: absolute;
@@ -87,7 +86,6 @@ body {
 /*Стиль текса лого*/
 .text__logo_NavBar {
   position: absolute;
-
   left: 192.5px;
   top: 28.33px;
 }
@@ -128,7 +126,6 @@ body {
   position: relative;
   height: 18px;
 }
-
 .arrow-blockone::after {
   position: absolute;
   content: "";
@@ -229,7 +226,6 @@ body {
 /*Стиль блока номера*/
 .blocknumber {
   border: 1px solid rgba(0, 0, 0, 0.12);
-
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   height: auto;
@@ -267,7 +263,6 @@ body {
 .arrival___input_way__blocknumber {
   margin-right: 22px;
 }
-
 .block____arrival___input_way__blocknumber {
   position: relative;
   width: 147px;
@@ -364,7 +359,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .select_visit__blocknumber {
   margin-top: 20.56px;
 }
-
 .text____button_visit___select_visit__blocknumber span {
   font-family: Montserrat-normal;
   font-style: normal;
@@ -457,7 +451,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 /*Стиль текста контента*/
-
 .text__content_main {
   margin-top: 320px;
   margin-left: 1009px;
@@ -564,7 +557,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 4px;
   padding-left: 15px;
 }
-
 .block-email__block-subscription_rectangle-information {
   position: relative;
 }
@@ -757,7 +749,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(31, 32, 65, 0.5);
   width: 30px;
   height: 30px;
-
   opacity: 0.38;
   cursor: pointer;
 }
@@ -837,11 +828,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .month__calendar_input {
   display: flex;
   position: relative;
-
   margin-top: 20px;
   margin-left: 100px;
 }
-
 .line__left-block_mount {
   position: absolute;
   top: 9px;
@@ -934,7 +923,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   position: relative;
 }
-
 .after__number_line {
   display: none;
   position: absolute;
@@ -950,21 +938,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-collapse: collapse;
   opacity: 0.25;
 }
-.number_line-one::after {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background: #000;
-  border: 0px;
-  padding: 0;
-  margin: 0;
-  border-collapse: collapse;
-  opacity: 0.25;
-}
+
 .line-one_table,
 .line-two_table,
 .line-three_table,
