@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"> </script>
   </head>
   <body onclick="TodaysDate()">
@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="login_NavBar">
-            <button class="button_enter__login_NavBar" type="submit">
+            <button class="button_enter__login_NavBar" type="submit" onclick="ClickButtonEnter()">
               ВОЙТИ
             </button>
             <button class="button_register__login_NavBar" type="submit">
@@ -174,8 +174,8 @@
               </table>
             </div>
             <div class="button__calendar_input">
-              <button class="button-reset___button__calendar_input">очистить</button>
-              <button class="button-accept___button__calendar_input">применить</button>
+              <button class="button-reset___button__calendar_input" onclick="ResetButtonCalendar()">очистить</button>
+              <button class="button-accept___button__calendar_input" onclick="AcceptButtonCalendar()">применить</button>
             </div>
           </div>
           <div class="select_visit__blocknumber">
@@ -217,8 +217,8 @@
                 </div>
               </div>
               <div class="button_guests-choice">
-                <button class="reset__button_guests-choice">очистить</button>
-                <button class="apply__button_guests-choice">применить</button>
+                <button class="reset__button_guests-choice" onclick="ResetButtonGuests()">очистить</button>
+                <button class="apply__button_guests-choice" onclick="AcceptButtonGuests()">применить</button>
               </div>
             </div>
             <script>
@@ -232,6 +232,23 @@
             <div class="arrow arrow-right"></div>
             <div class="line"></div>
           </div>
+        </div>
+        <div class="enter-block">
+          <div class="content_enter-block">
+            <div class="enter-text_enter-block"><span>Войти</span></div>
+          <div class="input-email_enter-block">
+            <input type="text" name="" id="" class="email_enter-block" value="Email">
+          </div>
+          <div class="input-password_enter-block">
+            <input type="text" name="" id="" class="password_enter-block" value="Пароль">
+          </div>
+          <button class="button_enter-block">войти</button>
+          <div class="text-bottom_enter-block">
+            <a href="" class="text_text-bottom_enter-block">Нет аккаунта на Toxin?</a>
+            <button class="button_text-bottom_enter-block">создать</button>
+          </div>
+          </div>
+          
         </div>
         <div class="text__content_main">
           <span
@@ -326,7 +343,7 @@
             </div>
             <div class="block-email__block-subscription_rectangle-information">
               <div class="text-email_block-email">
-                <input type="text" name="email" id="text-email_block-email" value="Email">
+                <input type="text" name="email" id="text-email_block-email" value="Email" onfocus="OnfocusEmailBottom()" onblur="OnblurEmailBottom()">
               </div>
               <div class="arrow_block-email arrow-right_block-email"></div>
               <div class="line_block-email"></div>

@@ -282,6 +282,7 @@ body {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #fff;
+  cursor: pointer;
 }
 .block____arrival___input_way__blocknumber::before {
   position: absolute;
@@ -294,6 +295,7 @@ body {
   border-right: 7px solid transparent;
   border-top: 7px solid #999;
   border-radius: 50%;
+  cursor: pointer;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
@@ -335,6 +337,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #fff;
+  cursor: pointer;
 }
 .block____exit___input_way__blocknumber::before {
   position: absolute;
@@ -347,6 +350,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-right: 7px solid transparent;
   border-top: 7px solid #999;
   border-radius: 50%;
+  cursor: pointer;
 }
 .textnumberone {
   font-family: Montserrat;
@@ -376,7 +380,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 4px;
 }
 .button_visit___select_visit__blocknumber:hover {
-  cursor: pointer;
 }
 .text____button_visit___select_visit__blocknumber {
   position: relative;
@@ -393,6 +396,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 7px solid #fff;
+  cursor: pointer;
 }
 .text____button_visit___select_visit__blocknumber::before {
   position: absolute;
@@ -405,6 +409,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-right: 7px solid transparent;
   border-top: 7px solid #999;
   border-radius: 50%;
+  cursor: pointer;
 }
 .button__blocknamber {
   position: relative;
@@ -797,6 +802,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: #fff;
   padding: 0px;
   border: none;
+  cursor: pointer;
 }
 .apply__button_guests-choice {
   font-family: Montserrat;
@@ -811,6 +817,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   margin-left: 137px;
   margin-right: 7px;
+  cursor: pointer;
 }
 /*Календарь*/
 .calendar___input_way__blocknumber {
@@ -888,8 +895,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: rotate(45deg);
 }
 .number-calendar__calendar_input {
-  display: ;
-  position: ;
   margin-top: 30px;
   margin-left: 21px;
 }
@@ -940,6 +945,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0;
   border-collapse: collapse;
   opacity: 0.25;
+  z-index: 1;
 }
 
 .line-one_table,
@@ -971,9 +977,53 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #bc9cff;
   border: none;
   background: #fff;
+  cursor: pointer;
 }
 .button-accept___button__calendar_input {
   margin-left: 118px;
+}
+/*Войти*/
+.enter-block {
+  position: relative;
+  margin-top: 172px;
+  margin-left: 530px;
+  background: #fff;
+  width: 380px;
+  height: 358px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.enter-text_enter-block {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2041;
+}
+.input-email_enter-block {
+  margin-top: 20px;
+}
+.input-password_enter-block {
+  margin-top: 10px;
+  background: red;
+}
+.content_enter-block {
+  width: 320px;
+}
+.email_enter-block,
+.password_enter-block {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
 }
 /*Шрифты*/
 @font-face {
