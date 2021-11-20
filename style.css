@@ -985,13 +985,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /*Войти*/
 .enter-block {
   position: relative;
-  margin-top: 172px;
+  display: none;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  height: auto;
+  max-width: 380px;
   margin-left: 530px;
-  background: #fff;
-  width: 380px;
-  height: 358px;
-  padding-top: 40px;
-  padding-left: 30px;
+  margin-top: 172px;
+  padding: 40px 30px 32px 30px;
 }
 .enter-text_enter-block {
   font-family: Montserrat;
@@ -1006,14 +1010,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .input-password_enter-block {
   margin-top: 10px;
-  background: red;
 }
 .content_enter-block {
   width: 320px;
 }
 .email_enter-block,
 .password_enter-block {
-  width: 320px;
+  width: 314px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1024,6 +1027,76 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.25);
+}
+.button_enter-block {
+  margin-top: 20px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border: none;
+  border-radius: 22px;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.text-bottom_enter-block {
+  margin-top: 30px;
+}
+.text_text-bottom_enter-block {
+  text-decoration: none;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.button_text-bottom_enter-block {
+  margin-left: 53px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border-radius: 22px;
+  width: 99px;
+  height: 44px;
+  border: 1px solid #bc9cff;
+  background: #fff;
+}
+.block-button_enter-block {
+  position: relative;
+}
+.line_enter-block {
+  position: absolute;
+  top: 41px;
+  right: 16px;
+  width: 12px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-radius: 1px;
+}
+.arrow_enter-block {
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  margin-right: 0px;
+  border-radius: 1px;
+}
+.arrow-right_enter-block {
+  transform: rotate(45deg);
 }
 /*Шрифты*/
 @font-face {

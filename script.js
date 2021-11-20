@@ -231,4 +231,5 @@ function ClickButtonEnter() {
   document.querySelector(".blocknumber").style.display = "none";
   document.querySelector(".text__content_main").style.display = "none";
   document.querySelector(".description_main").style.marginTop = "772px";
+  document.querySelector(".enter-block").style.display = "block";
 }
