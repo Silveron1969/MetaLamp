@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"> </script>
   </head>
   <body onclick="TodaysDate()">
@@ -45,7 +45,7 @@
             <button class="button_enter__login_NavBar" type="submit" onclick="ClickButtonEnter()">
               ВОЙТИ
             </button>
-            <button class="button_register__login_NavBar" type="submit">
+            <button class="button_register__login_NavBar" type="submit" onclick="ClickButtonLogin()">
               ЗАРЕГИСТРИРОВАТЬСЯ
             </button>
           </div>
@@ -254,6 +254,59 @@
           </div>
           </div>
           
+        </div>
+        <div class="accountRegistration-block">
+          <div class="title-text_accountRegistration-block"><span>Регистрация аккаунта</span></div>
+          <div class="inputName-block_accountRegistration-block">
+            <input type="text" class="input-name_inputName-block" value="Имя">
+          </div>
+          <div class="inputSurname-block_accountRegistration-block">
+            <input type="text" class="input-surname_inputSurname-block" value="Фамилия">
+          </div>
+          <div class="choiceCheckboxes-block_accountRegistration-block">
+            <div class="blockMan_choiceCheckboxes-block">
+              <div class="radioBlockMan_blockMan"  onclick="ClickRadioMan()">
+                <div class="circleBlock_radioBlockMan"></div>
+              </div>
+              <span>Мужчина</span>
+            </div>
+            <div class="blockWoman_choiceCheckboxes-block">
+              <div class="radioBlockWoman_blockWoman" onclick="ClickRadioWoman()">
+                <div class="circleBlock_radioBlockWoman"></div>
+              </div>
+              <span>Женщина</span>
+            </div>
+          </div>
+          <div class="dateBirth_accountRegistration-block">
+            <span>дата рождения</span>
+            <div class="blocktothedata_dateBirth">
+              <input type="text" class="input-dateBirth_dateBirth" value="ДД.ММ.ГГГГ">
+            </div>
+          </div>
+          <div class="data-block_accountRegistration-block">
+            <span id="text_data-block">данные для входа в сервис</span>
+            <div class="blockInblock-email_data-block">
+              <input type="text" class="input-email_data-block" value="Email">
+            </div>
+            <div class="blockInblock-password_data-block">
+              <input type="text" class="input-password_data-block" value="Пароль">
+            </div>
+            <div class="specialOffers_data-block_accountRegistration-block">
+              <div class="ovalBlock__specialOffers_data-block" onclick="ClickOvalBlock()">
+                <div class="circleBlock_ovalBlock"></div>
+              </div>
+              <span>Получать спецпредложения</span>
+            </div>
+          </div>
+          <div class="block-button_accountRegistration-block">
+            <button class="button-login_accountRegistration-block">зарегистрироваться</button>
+            <div class="arrow_accountRegistration-block arrow-right_accountRegistration-block"></div>
+            <div class="line_accountRegistration-block"></div>
+          </div>
+          <div class="bottom_content_accountRegistration-block">
+            <span>Уже есть аккаунт на Toxin</span>
+            <button class="button-enter__bottom_content_accountRegistration-block" onclick="ClickButtonEnterBottom()">войти</button>
+          </div>
         </div>
         <div class="text__content_main">
           <span

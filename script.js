@@ -232,4 +232,52 @@ function ClickButtonEnter() {
   document.querySelector(".text__content_main").style.display = "none";
   document.querySelector(".description_main").style.marginTop = "772px";
   document.querySelector(".enter-block").style.display = "block";
+  document.querySelector(".accountRegistration-block").style.display = "none";
+}
+function ClickButtonLogin() {
+  document.querySelector("body").style.background =
+    "url(images/image4.png) no-repeat";
+  document.querySelector("body").style.backgroundSize = "cover";
+  document.querySelector(".blocknumber").style.display = "none";
+  document.querySelector(".text__content_main").style.display = "none";
+  document.querySelector(".description_main").style.marginTop = "754px";
+  document.querySelector(".accountRegistration-block").style.display = "block";
+  document.querySelector(".enter-block").style.display = "none";
+}
+function ClickRadioMan() {
+  document.querySelector(".circleBlock_radioBlockMan").style.display = "block";
+  if (
+    document.querySelector(".circleBlock_radioBlockWoman").style.display ==
+    "block"
+  )
+    document.querySelector(".circleBlock_radioBlockWoman").style.display =
+      "none";
+}
+function ClickRadioWoman() {
+  document.querySelector(".circleBlock_radioBlockWoman").style.display =
+    "block";
+  if (
+    document.querySelector(".circleBlock_radioBlockMan").style.display ==
+    "block"
+  )
+    document.querySelector(".circleBlock_radioBlockMan").style.display = "none";
+}
+function ClickOvalBlock() {
+  var circle = document.querySelector(".circleBlock_ovalBlock");
+  var oval = document.querySelector(".ovalBlock__specialOffers_data-block");
+
+  if (circle.style.marginLeft != "23px") {
+    circle.style.marginLeft = "23px";
+    circle.style.background =
+      "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
+    oval.style.border = "1px solid #BC9CFF";
+  } else {
+    circle.style.marginLeft = "3px";
+    circle.style.background = "rgba(31, 32, 65, 0.25)";
+    oval.style.border = "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+function ClickButtonEnterBottom(){
+  document.querySelector(".enter-block").style.display = "block";
+  document.querySelector(".accountRegistration-block").style.display = "none";
 }

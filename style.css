@@ -1043,6 +1043,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 .text-bottom_enter-block {
   margin-top: 30px;
@@ -1071,13 +1072,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 44px;
   border: 1px solid #bc9cff;
   background: #fff;
+  cursor: pointer;
 }
 .block-button_enter-block {
   position: relative;
+
 }
 .line_enter-block {
   position: absolute;
-  top: 41px;
+  top: 42px;
   right: 16px;
   width: 12px;
   height: 8px;
@@ -1098,6 +1101,302 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .arrow-right_enter-block {
   transform: rotate(45deg);
 }
+/*поле регистрации*/
+.accountRegistration-block {
+  display: none;
+  margin-left: 530px;
+  margin-top: 89px;
+  width: 380px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
+}
+.title-text_accountRegistration-block {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2041;
+}
+.inputName-block_accountRegistration-block input,
+.inputSurname-block_accountRegistration-block input {
+  margin-top: 20px;
+  padding-left: 15px;
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.choiceCheckboxes-block_accountRegistration-block {
+  margin-top: 10px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  display: flex;
+}
+.choiceCheckboxes-block_accountRegistration-block span {
+  margin-right: 20px;
+}
+.blockMan_choiceCheckboxes-block,
+.blockWoman_choiceCheckboxes-block {
+  display: flex;
+  align-items: center;
+}
+.radioBlockMan_blockMan,
+.radioBlockWoman_blockWoman {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bc9cff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.circleBlock_radioBlockMan,
+.circleBlock_radioBlockWoman {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 10px;
+  margin-left: 3px;
+  margin-top: 3px;
+  display: none;
+}
+.dateBirth_accountRegistration-block {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.blocktothedata_dateBirth {
+  margin-top: 5px;
+}
+.blocktothedata_dateBirth input {
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+.data-block_accountRegistration-block {
+  margin-top: 20px;
+}
+#text_data-block {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.blockInblock-email_data-block {
+  margin-top: 5px;
+}
+.input-email_data-block,
+.input-password_data-block {
+  width: 320px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+.blockInblock-password_data-block {
+  margin-top: 10px;
+}
+.specialOffers_data-block_accountRegistration-block {
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+}
+.specialOffers_data-block_accountRegistration-block span {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 10px;
+}
+.ovalBlock__specialOffers_data-block {
+  width: 40px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.circleBlock_ovalBlock {
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.block-button_accountRegistration-block {
+  margin-top: 20px;
+  position: relative;
+}
+.button-login_accountRegistration-block {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+.bottom_content_accountRegistration-block {
+  margin-top: 30px;
+}
+.bottom_content_accountRegistration-block span {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.button-enter__bottom_content_accountRegistration-block {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid #bc9cff;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 29px;
+  cursor: pointer;
+}
+.line_accountRegistration-block {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  width: 12px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-radius: 1px;
+}
+.arrow_accountRegistration-block {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  margin-right: 0px;
+  border-radius: 1px;
+}
+.arrow-right_accountRegistration-block {
+  transform: rotate(45deg);
+}
+/*слайдер
+.switch__specialOffers_data-block {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch__specialOffers_data-block input {display:none;}
+
+.slider__specialOffers_data-block {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider__specialOffers_data-block:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider__specialOffers_data-block {
+  background-color: #2196F3;
+}
+
+input:focus + .slider__specialOffers_data-block {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider__specialOffers_data-block:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider__specialOffers_data-block.round__specialOffers_data-block {
+  border-radius: 34px;
+}
+
+.slider__specialOffers_data-block.round__specialOffers_data-block:before {
+  border-radius: 50%;
+}*/
+
 /*Шрифты*/
 @font-face {
   font-family: "Montserrat";
