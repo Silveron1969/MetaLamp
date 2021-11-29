@@ -11,6 +11,7 @@
   <body onclick="TodaysDate()">
     <main>
       <div class="content_main">
+        <!--Тайтл-->
         <div class="NavBar title">
           <div class="logo_NavBar">
             <div class="icon__logo_NavBar">
@@ -50,272 +51,455 @@
             </button>
           </div>
         </div>
-        <div class="blocknumber">
-          <div class="text_title__blocknumber">
-            <span>Найдём номера под ваши пожелания</span>
-          </div>
-          <div class="input_way__blocknumber">
-            <div class="arrival___input_way__blocknumber">
-              <span>прибытие</span>
-              <div class="block____arrival___input_way__blocknumber" onclick="СallingСalendar()">
-                <span id="arrival___input_way__blocknumber">ДД.ММ.ГГГГ</span>
-              </div>
+        <div class="kromeTitle">
+            <!--Найдем номера под ваши пожелания-->
+          <div class="blocknumber">
+            <div class="text_title__blocknumber">
+              <span>Найдём номера под ваши пожелания</span>
             </div>
-            <div class="exit__input_way__blocknumber">
-              <span>выезд</span>
-              <div class="block____exit___input_way__blocknumber" onclick="СallingСalendar()">
-                <span id="exit___input_way__blocknumber">ДД.ММ.ГГГГ</span>
-              </div>
-            </div>
-          </div>
-          <div class="calendar___input_way__blocknumber">
-            <div class="month__calendar_input">
-              <div class="left-block_mount">
-                <div class="left-arrow__left-block_mount"></div>
-                <div class="line__left-block_mount"></div>
-              </div>
-              <span class="mount_mount">Ноябрь 2021</span>
-              <div class="right-block_mount">
-                <div class="right-arrow__right-block_mount"></div>
-                <div class="line__right-block_mount"></div>
-              </div>
-            </div>
-            <div class="number-calendar__calendar_input">
-              <table class="table_number-calendar" onclick="CheckBorderRadius()">
-                <tr class="weekday__table_number-calendar">
-                  <td class="weekday pn">Пн</td>
-                  <td class="weekday wt">Вт</td>
-                  <td class="weekday sr">Ср</td>
-                  <td class="weekday cht">Чт</td>
-                  <td class="weekday pt">Пт</td>
-                  <td class="weekday sb">Сб</td>
-                  <td class="weekday ws">Вс</td>
-                </tr>
-                <tr class="line-one_table">
-                  <td class="number_line-one" >
-                    <div class="after__number_line"></div>1</td>
-                  <td class="number_line-one" >
-                    <div class="after__number_line"></div>2</td>
-                  <td class="number_line-one" >
-                    <div class="after__number_line"></div>3</td>
-                  <td class="number_line-one" >
-                    <div class="after__number_line"></div>4</td>
-                  <td class="number_line-one" >
-                    <div class="after__number_line"></div>5</td>
-                  <td class="number_line-one">
-                    <div class="after__number_line"></div>6</td>
-                  <td class="number_line-one">
-                    <div class="after__number_line"></div>7</td>
-                </tr>
-                <tr class="line-two_table">
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>8</td>
-                  <td class="number_line-two" >
-                    <div class="after__number_line"></div>9</td>
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>10</td>
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>11</td>
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>12</td>
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>13</td>
-                  <td class="number_line-two">
-                    <div class="after__number_line"></div>14</td>
-                </tr>
-                <tr class="line-three_table">
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>15</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>16</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>17</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>18</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>19</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>20</td>
-                  <td class="number_line-three">
-                    <div class="after__number_line"></div>21</td>
-                </tr>
-                <tr class="line-four_table">
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>22</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>23</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>24</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>25</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>26</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>27</td>
-                  <td class="number_line-four">
-                    <div class="after__number_line"></div>28</td>
-                </tr>
-                <tr class="line-five_table">
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>29</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>30</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>1</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>2</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>3</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>4</td>
-                  <td class="number_line-five">
-                    <div class="after__number_line"></div>5</td>
-                </tr>
-              </table>
-            </div>
-            <div class="button__calendar_input">
-              <button class="button-reset___button__calendar_input" onclick="ResetButtonCalendar()">очистить</button>
-              <button class="button-accept___button__calendar_input" onclick="AcceptButtonCalendar()">применить</button>
-            </div>
-          </div>
-          <div class="select_visit__blocknumber">
-            <span class="textnumberone">гости</span>
-            <div class="button_visit___select_visit__blocknumber" onclick="DispButtonGuests()">
-              <div class="text____button_visit___select_visit__blocknumber">
-                <span class="the-guests">Сколько гостей</span>
-              </div>
-            </div>
-            <div class="guests-choice___select_visit__blocknumber" style="display: none">
-              <div class="choice_guests-choice">
-                <div class="text__choice_guests-choice">
-                  <div class="blockspan___text__choice_guests-choice">
-                    <span>взрослые</span>
-                  </div>
-                  <div class="blockspan___text__choice_guests-choice">
-                    <span>дети</span>
-                  </div>
-                  <div class="blockspan___text__choice_guests-choice">
-                    <span class="margin29">младенцы</span>
-                  </div>
-                </div>
-                <div class="button__choice_guests-choice">
-                  <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus adults_minus" onclick="ClickButtonMinusAdults()">-</button>
-                    <span class="adults-text">0</span>
-                    <button class="circle-button-plus adults_plus" onclick="ClickButtonPlusAdults()">+</button>
-                  </div>
-                  <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus children_minus" onclick="ClickButtonMinusChildren()">-</button>
-                    <span class="children-text">0</span>
-                    <button class="circle-button-plus children_plus" onclick="ClickButtonPlusChildren()">+</button>
-                  </div>
-                  <div class="circle-button___button__choice_guests-choice">
-                    <button class="circle-button-minus babies_minus" onclick="ClickButtonMinusBabies()">-</button>
-                    <span class="babie-text">0</span>
-                    <button class="circle-button-plus babies_plus" onclick="ClickButtonPlusBabies()">+</button>
-                  </div>
+            <div class="input_way__blocknumber">
+              <div class="arrival___input_way__blocknumber">
+                <span>прибытие</span>
+                <div class="block____arrival___input_way__blocknumber" onclick="СallingСalendar()">
+                  <span id="arrival___input_way__blocknumber">ДД.ММ.ГГГГ</span>
                 </div>
               </div>
-              <div class="button_guests-choice">
-                <button class="reset__button_guests-choice" onclick="ResetButtonGuests()">очистить</button>
-                <button class="apply__button_guests-choice" onclick="AcceptButtonGuests()">применить</button>
+              <div class="exit__input_way__blocknumber">
+                <span>выезд</span>
+                <div class="block____exit___input_way__blocknumber" onclick="СallingСalendar()">
+                  <span id="exit___input_way__blocknumber">ДД.ММ.ГГГГ</span>
+                </div>
               </div>
             </div>
-            <script>
-              
-            </script>
-          </div>
-          <div class="button__blocknamber">
-            <button class="button_search___button__blocknumber">
-              подобрать номер
-            </button>
-            <div class="arrow arrow-right"></div>
-            <div class="line"></div>
-          </div>
-        </div>
-        <div class="enter-block">
-          <div class="content_enter-block">
-            <div class="enter-text_enter-block"><span>Войти</span></div>
-          <div class="input-email_enter-block">
-            <input type="text" name="" id="" class="email_enter-block" value="Email">
-          </div>
-          <div class="input-password_enter-block">
-            <input type="text" name="" id="" class="password_enter-block" value="Пароль">
-          </div>
-          <div class="block-button_enter-block">
-            <button class="button_enter-block">войти</button>
-            <div class="arrow_enter-block arrow-right_enter-block"></div>
-            <div class="line_enter-block"></div>
-          </div>
-          
-          <div class="text-bottom_enter-block">
-            <a href="#" class="text_text-bottom_enter-block">Нет аккаунта на Toxin?</a>
-            <button class="button_text-bottom_enter-block">создать</button>
-          </div>
-          </div>
-          
-        </div>
-        <div class="accountRegistration-block">
-          <div class="title-text_accountRegistration-block"><span>Регистрация аккаунта</span></div>
-          <div class="inputName-block_accountRegistration-block">
-            <input type="text" class="input-name_inputName-block" value="Имя">
-          </div>
-          <div class="inputSurname-block_accountRegistration-block">
-            <input type="text" class="input-surname_inputSurname-block" value="Фамилия">
-          </div>
-          <div class="choiceCheckboxes-block_accountRegistration-block">
-            <div class="blockMan_choiceCheckboxes-block">
-              <div class="radioBlockMan_blockMan"  onclick="ClickRadioMan()">
-                <div class="circleBlock_radioBlockMan"></div>
+            <div class="calendar___input_way__blocknumber">
+              <div class="month__calendar_input">
+                <div class="left-block_mount">
+                  <div class="left-arrow__left-block_mount"></div>
+                  <div class="line__left-block_mount"></div>
+                </div>
+                <span class="mount_mount">Ноябрь 2021</span>
+                <div class="right-block_mount">
+                  <div class="right-arrow__right-block_mount"></div>
+                  <div class="line__right-block_mount"></div>
+                </div>
               </div>
-              <span>Мужчина</span>
-            </div>
-            <div class="blockWoman_choiceCheckboxes-block">
-              <div class="radioBlockWoman_blockWoman" onclick="ClickRadioWoman()">
-                <div class="circleBlock_radioBlockWoman"></div>
+              <div class="number-calendar__calendar_input">
+                <table class="table_number-calendar" onclick="CheckBorderRadius()">
+                  <tr class="weekday__table_number-calendar">
+                    <td class="weekday pn">Пн</td>
+                    <td class="weekday wt">Вт</td>
+                    <td class="weekday sr">Ср</td>
+                    <td class="weekday cht">Чт</td>
+                    <td class="weekday pt">Пт</td>
+                    <td class="weekday sb">Сб</td>
+                    <td class="weekday ws">Вс</td>
+                  </tr>
+                  <tr class="line-one_table">
+                    <td class="number_line-one" >
+                      <div class="after__number_line"></div>1</td>
+                    <td class="number_line-one" >
+                      <div class="after__number_line"></div>2</td>
+                    <td class="number_line-one" >
+                      <div class="after__number_line"></div>3</td>
+                    <td class="number_line-one" >
+                      <div class="after__number_line"></div>4</td>
+                    <td class="number_line-one" >
+                      <div class="after__number_line"></div>5</td>
+                    <td class="number_line-one">
+                      <div class="after__number_line"></div>6</td>
+                    <td class="number_line-one">
+                      <div class="after__number_line"></div>7</td>
+                  </tr>
+                  <tr class="line-two_table">
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>8</td>
+                    <td class="number_line-two" >
+                      <div class="after__number_line"></div>9</td>
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>10</td>
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>11</td>
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>12</td>
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>13</td>
+                    <td class="number_line-two">
+                      <div class="after__number_line"></div>14</td>
+                  </tr>
+                  <tr class="line-three_table">
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>15</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>16</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>17</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>18</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>19</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>20</td>
+                    <td class="number_line-three">
+                      <div class="after__number_line"></div>21</td>
+                  </tr>
+                  <tr class="line-four_table">
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>22</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>23</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>24</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>25</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>26</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>27</td>
+                    <td class="number_line-four">
+                      <div class="after__number_line"></div>28</td>
+                  </tr>
+                  <tr class="line-five_table">
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>29</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>30</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>1</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>2</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>3</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>4</td>
+                    <td class="number_line-five">
+                      <div class="after__number_line"></div>5</td>
+                  </tr>
+                </table>
               </div>
-              <span>Женщина</span>
-            </div>
-          </div>
-          <div class="dateBirth_accountRegistration-block">
-            <span>дата рождения</span>
-            <div class="blocktothedata_dateBirth">
-              <input type="text" class="input-dateBirth_dateBirth" value="ДД.ММ.ГГГГ">
-            </div>
-          </div>
-          <div class="data-block_accountRegistration-block">
-            <span id="text_data-block">данные для входа в сервис</span>
-            <div class="blockInblock-email_data-block">
-              <input type="text" class="input-email_data-block" value="Email">
-            </div>
-            <div class="blockInblock-password_data-block">
-              <input type="text" class="input-password_data-block" value="Пароль">
-            </div>
-            <div class="specialOffers_data-block_accountRegistration-block">
-              <div class="ovalBlock__specialOffers_data-block" onclick="ClickOvalBlock()">
-                <div class="circleBlock_ovalBlock"></div>
+              <div class="button__calendar_input">
+                <button class="button-reset___button__calendar_input" onclick="ResetButtonCalendar()">очистить</button>
+                <button class="button-accept___button__calendar_input" onclick="AcceptButtonCalendar()">применить</button>
               </div>
-              <span>Получать спецпредложения</span>
+            </div>
+            <div class="select_visit__blocknumber">
+              <span class="textnumberone">гости</span>
+              <div class="button_visit___select_visit__blocknumber" onclick="DispButtonGuests()">
+                <div class="text____button_visit___select_visit__blocknumber">
+                  <span class="the-guests">Сколько гостей</span>
+                </div>
+              </div>
+              <div class="guests-choice___select_visit__blocknumber" style="display: none">
+                <div class="choice_guests-choice">
+                  <div class="text__choice_guests-choice">
+                    <div class="blockspan___text__choice_guests-choice">
+                      <span>взрослые</span>
+                    </div>
+                    <div class="blockspan___text__choice_guests-choice">
+                      <span>дети</span>
+                    </div>
+                    <div class="blockspan___text__choice_guests-choice">
+                      <span class="margin29">младенцы</span>
+                    </div>
+                  </div>
+                  <div class="button__choice_guests-choice">
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus adults_minus" onclick="ClickButtonMinusAdults()">-</button>
+                      <span class="adults-text">0</span>
+                      <button class="circle-button-plus adults_plus" onclick="ClickButtonPlusAdults()">+</button>
+                    </div>
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus children_minus" onclick="ClickButtonMinusChildren()">-</button>
+                      <span class="children-text">0</span>
+                      <button class="circle-button-plus children_plus" onclick="ClickButtonPlusChildren()">+</button>
+                    </div>
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus babies_minus" onclick="ClickButtonMinusBabies()">-</button>
+                      <span class="babie-text">0</span>
+                      <button class="circle-button-plus babies_plus" onclick="ClickButtonPlusBabies()">+</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="button_guests-choice">
+                  <button class="reset__button_guests-choice" onclick="ResetButtonGuests()">очистить</button>
+                  <button class="apply__button_guests-choice" onclick="AcceptButtonGuests()">применить</button>
+                </div>
+              </div>
+              <script>
+                
+              </script>
+            </div>
+            <div class="button__blocknamber">
+              <button class="button_search___button__blocknumber" onclick="ClickSearchButton()">
+                подобрать номер
+              </button>
+              <div class="arrow arrow-right"></div>
+              <div class="line"></div>
             </div>
           </div>
-          <div class="block-button_accountRegistration-block">
-            <button class="button-login_accountRegistration-block">зарегистрироваться</button>
-            <div class="arrow_accountRegistration-block arrow-right_accountRegistration-block"></div>
-            <div class="line_accountRegistration-block"></div>
+          <!--Вход-->
+          <div class="enter-block">
+            <div class="content_enter-block">
+              <div class="enter-text_enter-block"><span>Войти</span></div>
+            <div class="input-email_enter-block">
+              <input type="text" name="" id="" class="email_enter-block" value="Email" onfocus="FocusInput(this)">
+            </div>
+            <div class="input-password_enter-block">
+              <input type="text" name="" id="" class="password_enter-block" value="Пароль" onfocus="FocusInput(this)">
+            </div>
+            <div class="block-button_enter-block">
+              <button class="button_enter-block">войти</button>
+              <div class="arrow_enter-block arrow-right_enter-block"></div>
+              <div class="line_enter-block"></div>
+            </div>
+            
+            <div class="text-bottom_enter-block">
+              <a href="#" class="text_text-bottom_enter-block">Нет аккаунта на Toxin?</a>
+              <button class="button_text-bottom_enter-block">создать</button>
+            </div>
+            </div>
+            
           </div>
-          <div class="bottom_content_accountRegistration-block">
-            <span>Уже есть аккаунт на Toxin</span>
-            <button class="button-enter__bottom_content_accountRegistration-block" onclick="ClickButtonEnterBottom()">войти</button>
+          <!--Регистрация-->
+          <div class="accountRegistration-block">
+            <div class="title-text_accountRegistration-block"><span>Регистрация аккаунта</span></div>
+            <div class="inputName-block_accountRegistration-block">
+              <input type="text" class="input-name_inputName-block" value="Имя" onfocus="FocusInput(this)">
+            </div>
+            <div class="inputSurname-block_accountRegistration-block">
+              <input type="text" class="input-surname_inputSurname-block" value="Фамилия" onfocus="FocusInput(this)">
+            </div>
+            <div class="choiceCheckboxes-block_accountRegistration-block">
+              <div class="blockMan_choiceCheckboxes-block">
+                <div class="radioBlockMan_blockMan"  onclick="ClickRadioMan()">
+                  <div class="circleBlock_radioBlockMan"></div>
+                </div>
+                <span>Мужчина</span>
+              </div>
+              <div class="blockWoman_choiceCheckboxes-block">
+                <div class="radioBlockWoman_blockWoman" onclick="ClickRadioWoman()">
+                  <div class="circleBlock_radioBlockWoman"></div>
+                </div>
+                <span>Женщина</span>
+              </div>
+            </div>
+            <div class="dateBirth_accountRegistration-block">
+              <span>дата рождения</span>
+              <div class="blocktothedata_dateBirth">
+                <input type="text" class="input-dateBirth_dateBirth" value="ДД.ММ.ГГГГ" onfocus="FocusInput(this)">
+              </div>
+            </div>
+            <div class="data-block_accountRegistration-block">
+              <span id="text_data-block">данные для входа в сервис</span>
+              <div class="blockInblock-email_data-block">
+                <input type="text" class="input-email_data-block" value="Email" onfocus="FocusInput(this)">
+              </div>
+              <div class="blockInblock-password_data-block">
+                <input type="text" class="input-password_data-block" value="Пароль" onfocus="FocusInput(this)">
+              </div>
+              <div class="specialOffers_data-block_accountRegistration-block">
+                <div class="ovalBlock__specialOffers_data-block" onclick="ClickOvalBlock()">
+                  <div class="circleBlock_ovalBlock"></div>
+                </div>
+                <span>Получать спецпредложения</span>
+              </div>
+            </div>
+            <div class="block-button_accountRegistration-block">
+              <button class="button-login_accountRegistration-block">зарегистрироваться</button>
+              <div class="arrow_accountRegistration-block arrow-right_accountRegistration-block"></div>
+              <div class="line_accountRegistration-block"></div>
+            </div>
+            <div class="bottom_content_accountRegistration-block">
+              <span>Уже есть аккаунт на Toxin</span>
+              <button class="button-enter__bottom_content_accountRegistration-block" onclick="ClickButtonEnterBottom()">войти</button>
+            </div>
           </div>
-        </div>
-        <div class="text__content_main">
-          <span
-            >Лучшие номера для вашей работы,
-            <br />
-            отдыха и просто вдохновения</span
-          >
-        </div>
+          <div class="text__content_main">
+            <span
+              >Лучшие номера для вашей работы,
+              <br />
+              отдыха и просто вдохновения</span
+            >
+          </div>
+        </div> 
+        <div class="searchRoom-block">
+          <div class="left-block_searchRoom-block">
+            <div class="dataOtel__left-block_searchRoom-block">
+              <span>даты пребывания в отеле</span>
+              <div class="input__dataOtel_left-block">
+                <div class="dataInput__input_dataOtel"></div>
+              </div>
+            </div>
+            <div class="guestsBlock__left-block_searchRoom-block">
+              <span>гости</span>
+              <div class="input__guestsBlock_left-block">
+                <div class="guestsInput__input_guestsBlock"></div>
+              </div>
+            </div>
+            <div class="price__left-block_searchRoom-block">
+              <div class="textBlock__price_left-block">
+                <div class="oneBlock__textBlock_price">
+                  <span>диапазон цены</span>
+                </div>
+                <div class="twoBlock__textBlock_price">
+                  <span class="priceChange">5 000₽ - 10 000₽</span>
+                </div>
+              </div>
+              <div class="ovalBlock__price_left-block">
+                
+                <div class="circleBlockOne_ovalBlock"></div>
+                <div class="background_ovalBlock" id="test"></div>
+                <div class="circleBlockTwo_ovalBlock"></div>
+              </div>
+              <script>
+                var circleOne = document.querySelector(".circleBlockOne_ovalBlock");
+
+                circleOne.onmousedown = function(e) {
+
+                  var coords = getCoords(circleOne);
+                  var shiftX = e.pageX - coords.left;
+                  var shiftY = e.pageY - coords.top;
+                  //alert(coords.left);
+                  //circleOne.style.position = 'absolute';
+                  document.body.appendChild(circleOne);
+                  moveAt(e);
+
+                  circleOne.style.zIndex = 1000; // над другими элементами
+
+                  function moveAt(e) {
+                    circleOne.style.left = e.pageX - shiftX + 'px';
+                    circleOne.style.top = 318 + 'px';//e.pageY - shiftY + 'px';
+                  }
+
+                  document.onmousemove = function(e) {
+                    if(coords.left < '140'){
+                      circleOne.style.left = "140.5px";
+                      return 0;
+                    } 
+                    moveAt(e);
+                  };
+
+                  circleOne.onmouseup = function() {
+                    document.onmousemove = null;
+                    circleOne.onmouseup = null;
+                  };
+
+                }
+
+                circleOne.ondragstart = function() {
+                  return false;
+                };
+
+                function getCoords(elem) {   // кроме IE8-
+                  var box = elem.getBoundingClientRect();
+                  return {
+                    top: box.top + pageYOffset,
+                    left: box.left + pageXOffset
+                  };
+                }
+              </script>
+              <span class="textAfter__price_left-block">Стоимость за сутки пребывания в номере</span>
+            </div>
+            <div class="houseRules__left-block_searchRoom-block">
+              <span>правила дома</span>
+              <div class="smoke__houseRules_left-block">
+                <input type="checkbox" name="" id="">
+                <span>Можно курить</span>
+              </div>
+              <div class="pet__houseRules_left-block">
+                <input type="checkbox" name="" id="">
+                <span>Можно с питомцами</span>
+              </div>
+              <div class="guests__houseRules_left-block">
+                <input type="checkbox" name="" id="">
+                <span>Можно пригласить гостей <br> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;(до 10 человек)</span>
+              </div>
+            </div>
+            <div class="availability__left-block_searchRoom-block">
+              <span class="textTitle_availability">доступность</span>
+              <div class="hallway__availability_left-block">
+                  <input type="checkbox" name="" id="">
+                  <div class="text__hallway_availability">
+                    <div class="text1__hallway_availability">
+                      <span>Широкий коридор</span>                      
+                    </div>
+                    <div class="text2__hallway_availability">
+                      <span class="subtext__text_hallway">Ширина коридоров в номере <br> не менее 91 см.</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="assistant__availability_left-block">
+                  <input type="checkbox" name="" id="">
+                  <div class="text__assistant_availability">
+                    <div class="text1__hallway_availability">
+                      <span>Помощник для инвалидов</span>
+                    </div>
+                    <div class="text2__hallway_availability">
+                      <span class="subtext__text_assistant">На 1 этаже вас встретит специалист <br>  и проводит до номера.</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="conveniences__left-block_searchRoom-block">
+              <span>удобства номера</span>
+              <div class="input__conveniences_left-block">
+                  <div class="conveniencesImput__input_conveniences" onclick="ClickConveniencesImput()">Выберите</div>
+                  <div class="conveniencesContent__input_conveniences">
+                    <div class="blockflex_conveniencesContent">
+                      <div class="text__conveniencesContent_input_conveniences">
+                          <div class="blockspan__text_conveniencesContent oneText"><span>спальни</span></div>
+                          <div class="blockspan__text_conveniencesContent oneText"><span>кровати</span></div>
+                          <div class="blockspan__text_conveniencesContent"><span>ванные комнаты</span></div>
+                        </div>
+                        <div class="button__conveniencesContent_input_conveniences">
+                          <div class="circle-button__button_conveniencesContent">
+                            <button class="circle-button-minus_circle-button bedrooms_minus" onclick="ClickMinusBedrooms()">-</button>
+                            <span class="bedrooms-text">0</span>
+                            <button class="circle-button-plus_circle-button bedrooms_plus" onclick="ClickPlusBedrooms()">+</button>
+                          </div>
+                          <div class="circle-button__button_conveniencesContent">
+                            <button class="circle-button-minus_circle-button beds_minus" onclick="ClickMinusBeds()">-</button>
+                            <span class="beds-text">0</span>
+                            <button class="circle-button-plus_circle-button beds_plus" onclick="ClickPlusBeds()">+</button>
+                          </div>
+                          <div class="circle-button__button_conveniencesContent">
+                            <button class="circle-button-minus_circle-button bathrooms_minus" onclick="ClickMinusBathrooms()">-</button>
+                            <span class="bathrooms-text">0</span>
+                            <button class="circle-button-plus_circle-button bathrooms_plus" onclick="ClickPlusBathrooms()">+</button>
+                          </div>
+                      </div>
+                    
+                    </div>
+                    <!--
+                  <div class="button__choice_guests-choice">
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus adults_minus" onclick="ClickButtonMinusAdults()">-</button>
+                      <span class="adults-text">0</span>
+                      <button class="circle-button-plus adults_plus" onclick="ClickButtonPlusAdults()">+</button>
+                    </div>
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus children_minus" onclick="ClickButtonMinusChildren()">-</button>
+                      <span class="children-text">0</span>
+                      <button class="circle-button-plus children_plus" onclick="ClickButtonPlusChildren()">+</button>
+                    </div>
+                    <div class="circle-button___button__choice_guests-choice">
+                      <button class="circle-button-minus babies_minus" onclick="ClickButtonMinusBabies()">-</button>
+                      <span class="babie-text">0</span>
+                      <button class="circle-button-plus babies_plus" onclick="ClickButtonPlusBabies()">+</button>
+                    </div>
+                  </div>-->
+                  </div>
+              </div>
+            </div>
+            <div class="additionalAmenities__left-block_searchRoom-block">
+              <span>дополнительные удобства</span>
+            </div>
+          </div>
+          <div class="block-content_searchRoom-block">
+            
+          </div>
+        </div> 
       </div>
+      <!--Нижний тайтл-->
       <div class="description_main">
         <div class="rectangle-information__description_main">
           <div class="block-icon_rectangle-information">

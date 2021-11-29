@@ -11,6 +11,7 @@ body {
   width: 100%;
   background: #fff;
   display: flex;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 /*Стиль лого*/
 .icon__logo_NavBar {
@@ -101,7 +102,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 1px;
+  margin-top: 2px;
   margin-left: 19px;
   content: "";
   width: 2.1px;
@@ -378,8 +379,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-}
-.button_visit___select_visit__blocknumber:hover {
 }
 .text____button_visit___select_visit__blocknumber {
   position: relative;
@@ -698,7 +697,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 0;
   left: 0;
   margin-top: 1px;
-  margin-left: 19px;
+  margin-left: 18px;
   content: "";
   width: 2.1px;
   height: 12px;
@@ -947,7 +946,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0.25;
   z-index: 1;
 }
-
 .line-one_table,
 .line-two_table,
 .line-three_table,
@@ -984,7 +982,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /*Войти*/
 .enter-block {
-  position: relative;
   display: none;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1016,7 +1013,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .email_enter-block,
 .password_enter-block {
-  width: 314px;
+  width: 302px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1027,6 +1024,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
 }
 .button_enter-block {
   margin-top: 20px;
@@ -1076,7 +1074,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .block-button_enter-block {
   position: relative;
-
 }
 .line_enter-block {
   position: absolute;
@@ -1156,6 +1153,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .blockWoman_choiceCheckboxes-block {
   display: flex;
   align-items: center;
+  color: rgba(31, 32, 65, 0.5);
 }
 .radioBlockMan_blockMan,
 .radioBlockWoman_blockWoman {
@@ -1340,63 +1338,345 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .arrow-right_accountRegistration-block {
   transform: rotate(45deg);
 }
-/*слайдер
-.switch__specialOffers_data-block {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch__specialOffers_data-block input {display:none;}
-
-.slider__specialOffers_data-block {
+/*левый блок выбора комнаты*/
+.searchRoom-block {
   position: absolute;
-  cursor: pointer;
   top: 0;
   left: 0;
+  z-index: -1;
+  display: none;
+}
+.left-block_searchRoom-block {
+  margin-top: 70px;
+  padding: 30px 60px 0px 140px;
+  background: #fff;
+}
+.dataOtel__left-block_searchRoom-block span,
+.guestsBlock__left-block_searchRoom-block span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.input__dataOtel_left-block,
+.input__guestsBlock_left-block,
+.input__conveniences_left-block {
+  width: 266px;
+  margin-top: 5px;
+}
+.dataInput__input_dataOtel,
+.guestsInput__input_guestsBlock,
+.conveniencesImput__input_conveniences {
+  width: 266px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 15px;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-top: 11.8px;
+  text-transform: none;
+}
+.guestsBlock__left-block_searchRoom-block {
+  margin-top: 20px;
+}
+.price__left-block_searchRoom-block {
+  margin-top: 30px;
+  width: 266px;
+}
+.textAfter__price_left-block {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.textBlock__price_left-block {
+  position: relative;
+  align-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.oneBlock__textBlock_price {
+  display: table-cell;
+}
+.twoBlock__textBlock_price {
+  position: absolute;
+  top: 0;
   right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  display: table-cell;
+}
+.priceChange {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+.ovalBlock__price_left-block {
+  margin-top: 23px;
+  margin-bottom: 13px;
+  width: 266px;
+  height: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+}
+.circleBlockOne_ovalBlock,
+.circleBlockTwo_ovalBlock {
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+.circleBlockTwo_ovalBlock {
+  margin-left: 253px;
+}
+.background_ovalBlock {
+  width: 266px;
+  height: 6px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 3px;
+}
+.houseRules__left-block_searchRoom-block {
+  margin-top: 30px;
+}
+.houseRules__left-block_searchRoom-block span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.smoke__houseRules_left-block {
+  margin-top: 17px;
+}
+.smoke__houseRules_left-block span,
+.pet__houseRules_left-block span,
+.guests__houseRules_left-block span {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: none;
+  margin-left: 9.74px;
+}
+.availability__left-block_searchRoom-block {
+  margin-top: 30px;
+}
+.textTitle_availability {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.text__hallway_availability {
+  margin-top: 17px;
+}
+.hallway__availability_left-block input {
+  margin-top: 20px;
+}
+.assistant__availability_left-block input {
+  margin-top: 14px;
+}
+.hallway__availability_left-block,
+.assistant__availability_left-block {
+  display: flex;
+}
+.text__hallway_availability,
+.text__assistant_availability {
+  margin-left: 10px;
+}
+.assistant__availability_left-block span,
+.text1__hallway_availability span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.text2__hallway_availability span {
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.text__assistant_availability {
+  margin-top: 11px;
+}
+.conveniences__left-block_searchRoom-block {
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.additionalAmenities__left-block_searchRoom-block {
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+.input__dataOtel_left-block,
+.input__guestsBlock_left-block,
+.input__conveniences_left-block,
+.additionalAmenities__left-block_searchRoom-block {
+  position: relative;
 }
 
-.slider__specialOffers_data-block:before {
+.input__dataOtel_left-block::after,
+.input__guestsBlock_left-block::after,
+.input__conveniences_left-block::after {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  top: 16px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+  cursor: pointer;
 }
-
-input:checked + .slider__specialOffers_data-block {
-  background-color: #2196F3;
+.additionalAmenities__left-block_searchRoom-block::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+  cursor: pointer;
 }
-
-input:focus + .slider__specialOffers_data-block {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider__specialOffers_data-block:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-
-.slider__specialOffers_data-block.round__specialOffers_data-block {
-  border-radius: 34px;
-}
-
-.slider__specialOffers_data-block.round__specialOffers_data-block:before {
+.input__dataOtel_left-block::before,
+.input__guestsBlock_left-block::before,
+.input__conveniences_left-block::before {
+  position: absolute;
+  content: "";
+  top: 19px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
   border-radius: 50%;
-}*/
-
+  cursor: pointer;
+}
+.additionalAmenities__left-block_searchRoom-block::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*Окно номера*/
+.conveniencesContent__input_conveniences{
+  position: absolute;
+  width: 266px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0px 0px 4px 4px;
+  display: none;
+  padding-bottom: 7px;
+  z-index: 1;
+}
+.blockflex_conveniencesContent{
+  display: flex;
+}
+.text__conveniencesContent_input_conveniences{
+  margin-top: 13px;
+  margin-left: 15px;
+}
+.oneText{
+  margin-bottom: 22px;
+}
+.button__conveniencesContent_input_conveniences{
+  margin-left: 19px;
+}
+.circle-button__button_conveniencesContent{
+  display: flex;
+  margin-top: 7px;
+}
+.circle-button-minus_circle-button,
+.circle-button-plus_circle-button{
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  background: #fff;
+  font-family: Montserrat-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.circle-button-minus_circle-button{
+  opacity: 0.38;
+}
+.circle-button-plus_circle-button{
+  position: absolute;
+  margin-left: 62px;
+}
+.bedrooms-text,
+.beds-text,
+.bathrooms-text{
+  margin-left: 12px;
+  margin-top: 8px;
+}
 /*Шрифты*/
 @font-face {
   font-family: "Montserrat";

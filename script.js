@@ -252,6 +252,8 @@ function ClickRadioMan() {
   )
     document.querySelector(".circleBlock_radioBlockWoman").style.display =
       "none";
+  document.querySelector(".blockMan_choiceCheckboxes-block").color =
+    "rgba(31, 32, 65, 0.75)";
 }
 function ClickRadioWoman() {
   document.querySelector(".circleBlock_radioBlockWoman").style.display =
@@ -261,6 +263,8 @@ function ClickRadioWoman() {
     "block"
   )
     document.querySelector(".circleBlock_radioBlockMan").style.display = "none";
+  document.querySelector(".blockWoman_choiceCheckboxes-block").color =
+    "rgba(31, 32, 65, 0.75)";
 }
 function ClickOvalBlock() {
   var circle = document.querySelector(".circleBlock_ovalBlock");
@@ -277,7 +281,155 @@ function ClickOvalBlock() {
     oval.style.border = "1px solid rgba(31, 32, 65, 0.25)";
   }
 }
-function ClickButtonEnterBottom(){
+function ClickButtonEnterBottom() {
   document.querySelector(".enter-block").style.display = "block";
   document.querySelector(".accountRegistration-block").style.display = "none";
+}
+function FocusInput(q) {
+  var data = q.value;
+  if (
+    q.value == "Email" ||
+    q.value == "Пароль" ||
+    q.value == "Имя" ||
+    q.value == "Фамилия" ||
+    q.value == "ДД.ММ.ГГГГ"
+  )
+    q.value = "";
+  q.onblur = function () {
+    if (q.value == "") q.value = data;
+  };
+}
+function ClickSearchButton() {
+  document.querySelector(".kromeTitle").style.display = "none";
+  document.querySelector("body").style.background = "#fff";
+  document.querySelector(".searchRoom-block").style.display = "block";
+  var data1 = document.querySelector("#arrival___input_way__blocknumber")
+    .textContent;
+  var data2 = document.querySelector("#exit___input_way__blocknumber")
+    .textContent;
+  document.querySelector(".dataInput__input_dataOtel").textContent =
+    data1 + " - " + data2;
+  var guests = document.querySelector(".the-guests").textContent;
+  var baby = document.querySelector(".babie-text").textContent;
+  var textbaby;
+  if (parseFloat(baby) == 0 || parseFloat(baby) > 4) textbaby = " младенцев";
+  if (parseFloat(baby) == 1) textbaby = " младенец";
+  if (parseFloat(baby) > 1 && parseFloat(baby) < 5) textbaby = " младенца";
+  document.querySelector(".guestsInput__input_guestsBlock").textContent =
+    guests + ", " + baby + textbaby;
+}
+function ClickConveniencesImput() {
+  document.querySelector(
+    ".conveniencesContent__input_conveniences"
+  ).style.display = "block";
+  document.querySelector(
+    ".conveniencesImput__input_conveniences"
+  ).style.border = "1px solid rgba(31, 32, 65, 0.5)";
+  document.querySelector(
+    ".conveniencesImput__input_conveniences"
+  ).style.borderRadius = "4px 4px 0px 0px";
+  if (
+    document.querySelector(".conveniencesImput__input_conveniences")
+      .textContent != "Выберите"
+  )
+    document.querySelector(
+      ".conveniencesContent__input_conveniences"
+    ).style.display = "none";
+}
+function ClickPlusBedrooms() {
+  var data =
+    parseFloat(document.querySelector(".bedrooms-text").textContent) + 1;
+  document.querySelector(".bedrooms-text").textContent = data;
+  document.querySelector(".bedrooms_minus").style.opacity = "1";
+  if (data == 1)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спальня";
+  if (data > 1 && data < 5)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спальни";
+  if (data > 4)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спалень";
+}
+function ClickPlusBeds() {
+  var data = parseFloat(document.querySelector(".beds-text").textContent) + 1;
+  document.querySelector(".beds-text").textContent = data;
+  document.querySelector(".beds_minus").style.opacity = "1";
+  var content = document.querySelector(".bedrooms-text").textContent;
+  var text;
+  if (content == 1) text = " спальня, ";
+  if (content > 1 && content < 5) text = " спальни, ";
+  if (content > 4 || content == 0) text = " спалень, ";
+  if (data == 1)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кровать...";
+  if (data > 1 && data < 5)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кровати...";
+  if (data > 4)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кроватей...";
+}
+function ClickPlusBathrooms() {
+  var data =
+    parseFloat(document.querySelector(".bathrooms-text").textContent) + 1;
+  document.querySelector(".bathrooms-text").textContent = data;
+  document.querySelector(".bathrooms_minus").style.opacity = "1";
+}
+function ClickMinusBedrooms() {
+  var data =
+    parseFloat(document.querySelector(".bedrooms-text").textContent) - 1;
+  if (data < 0) return 0;
+  document.querySelector(".bedrooms-text").textContent = data;
+  if (data == 0)
+    document.querySelector(".bedrooms_minus").style.opacity = "0.38";
+  if (data == 1)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спальня";
+  if (data > 1 && data < 5)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спальни";
+  if (data > 4 || data == 0)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = data + " спалень";
+}
+function ClickMinusBeds() {
+  var data = parseFloat(document.querySelector(".beds-text").textContent) - 1;
+  if (data < 0) return 0;
+  document.querySelector(".beds-text").textContent = data;
+  if (data == 0) document.querySelector(".beds_minus").style.opacity = "0.38";
+  var content = document.querySelector(".bedrooms-text").textContent;
+  var text;
+  if (content == 1) text = " спальня, ";
+  if (content > 1 && content < 5) text = " спальни, ";
+  if (content > 4 || content == 0) text = " спалень, ";
+  if (data == 1)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кровать...";
+  if (data > 1 && data < 5)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кровати...";
+  if (data > 4 || data == 0)
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).textContent = content + text + data + " кроватей...";
+}
+function ClickMinusBathrooms() {
+  var data =
+    parseFloat(document.querySelector(".bathrooms-text").textContent) - 1;
+  if (data < 0) return 0;
+  document.querySelector(".bathrooms-text").textContent = data;
+  if (data == 0)
+    document.querySelector(".bathrooms_minus").style.opacity = "0.38";
 }
