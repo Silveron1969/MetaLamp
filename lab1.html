@@ -341,61 +341,59 @@
                   <span>диапазон цены</span>
                 </div>
                 <div class="twoBlock__textBlock_price">
-                  <span class="priceChange">5 000₽ - 10 000₽</span>
+                  <div class="priceChange"></div>
                 </div>
               </div>
-              <div class="ovalBlock__price_left-block">
-                
-                <div class="circleBlockOne_ovalBlock"></div>
-                <div class="background_ovalBlock" id="test"></div>
-                <div class="circleBlockTwo_ovalBlock"></div>
+              <div class="inputRange-block__price_left-block">
+                <input type="range" name="inputRange" id="inputRangeMin" min="0" step="1000" max="50000" value="0">
+                <div class="background_ovalBlock" id="test"></div> 
+                <input type="range" name="inputRange" id="inputRangeMax" min="0" step="1000" max="50000" value="50000" >
               </div>
               <script>
-                var circleOne = document.querySelector(".circleBlockOne_ovalBlock");
+                const sliders = document.querySelectorAll('input[type="range"]');
+                document.querySelector(".priceChange").textContent = sliders[0].value + "₽ - " + sliders[1].value + "₽";
+                var left = 0;
+                var value = sliders[0].value;
+                var per1 = 0;
+                var width = 242;
+                var per2 = 0;
+                var right = 0;
+                var razn = 242;
+                var razn2 = 0;
 
-                circleOne.onmousedown = function(e) {
-
-                  var coords = getCoords(circleOne);
-                  var shiftX = e.pageX - coords.left;
-                  var shiftY = e.pageY - coords.top;
-                  //alert(coords.left);
-                  //circleOne.style.position = 'absolute';
-                  document.body.appendChild(circleOne);
-                  moveAt(e);
-
-                  circleOne.style.zIndex = 1000; // над другими элементами
-
-                  function moveAt(e) {
-                    circleOne.style.left = e.pageX - shiftX + 'px';
-                    circleOne.style.top = 318 + 'px';//e.pageY - shiftY + 'px';
+                sliders[0].addEventListener('input', (e) => {
+                  if(+sliders[0].value > +sliders[1].value){
+                    sliders[1].value = +sliders[0].value;
                   }
-
-                  document.onmousemove = function(e) {
-                    if(coords.left < '140'){
-                      circleOne.style.left = "140.5px";
-                      return 0;
-                    } 
-                    moveAt(e);
-                  };
-
-                  circleOne.onmouseup = function() {
-                    document.onmousemove = null;
-                    circleOne.onmouseup = null;
-                  };
-
-                }
-
-                circleOne.ondragstart = function() {
-                  return false;
-                };
-
-                function getCoords(elem) {   // кроме IE8-
-                  var box = elem.getBoundingClientRect();
-                  return {
-                    top: box.top + pageYOffset,
-                    left: box.left + pageXOffset
-                  };
-                }
+                  razn = 0;
+                  var prov = per1;
+                  per1 = sliders[0].value;
+                  if(per1 - prov > 0) left = left + 5;
+                  else left = left - 5;
+                  document.querySelector(".priceChange").textContent = sliders[0].value + "₽ - " + sliders[1].value + "₽";
+                  document.querySelector(".background_ovalBlock").style.left =  left + 'px';
+                  if(razn2 == 0)
+                    document.querySelector(".background_ovalBlock").style.width = width - left + 'px';
+                  else document.querySelector(".background_ovalBlock").style.width = razn2 - left + 'px';
+                  razn = width - left - 11;
+                  //alert(razn2);
+                  //alert(razn);
+                });
+                sliders[1].addEventListener('input', (e) => {
+                if(+sliders[1].value < +sliders[0].value){
+                    sliders[0].value = +sliders[1].value;
+                  }
+                  var prov = per2;
+                  per2 = sliders[1].value;
+                  if(per2 - prov > 0) right = right + 5;
+                  else right = right - 5;
+                  //document.querySelector(".background_ovalBlock").style.right =  right + 'px';
+                  document.querySelector(".background_ovalBlock").style.width = razn + right + 'px';
+                  document.querySelector(".priceChange").textContent = sliders[0].value + "₽ - " + sliders[1].value + "₽";
+                  razn2 = razn + right + 11;
+                  //alert(razn2);
+                  //alert(razn);
+                });
               </script>
               <span class="textAfter__price_left-block">Стоимость за сутки пребывания в номере</span>
             </div>
