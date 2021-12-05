@@ -303,6 +303,7 @@ function ClickSearchButton() {
   document.querySelector(".kromeTitle").style.display = "none";
   document.querySelector("body").style.background = "#fff";
   document.querySelector(".searchRoom-block").style.display = "block";
+  document.querySelector(".description_main").style.marginTop = "1427px";
   var data1 = document.querySelector("#arrival___input_way__blocknumber")
     .textContent;
   var data2 = document.querySelector("#exit___input_way__blocknumber")
@@ -331,10 +332,17 @@ function ClickConveniencesImput() {
   if (
     document.querySelector(".conveniencesImput__input_conveniences")
       .textContent != "Выберите"
-  )
+  ) {
     document.querySelector(
       ".conveniencesContent__input_conveniences"
     ).style.display = "none";
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).style.border = "1px solid rgba(31, 32, 65, 0.25)";
+    document.querySelector(
+      ".conveniencesImput__input_conveniences"
+    ).style.borderRadius = "4px 4px 4px 4px";
+  }
 }
 function ClickPlusBedrooms() {
   var data =
@@ -432,4 +440,165 @@ function ClickMinusBathrooms() {
   document.querySelector(".bathrooms-text").textContent = data;
   if (data == 0)
     document.querySelector(".bathrooms_minus").style.opacity = "0.38";
+}
+var valuesmoke = "none";
+var valuepet = "none";
+var valueguests = "none";
+function ClickSmokeInput() {
+  if (valuesmoke == "none") {
+    document.querySelector(".smoke-checked").style.display = "block";
+    valuesmoke = "block";
+    document.querySelector(".smoke").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".smoke-checked").style.display = "none";
+    valuesmoke = "none";
+    document.querySelector(".smoke").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+function ClickPetInput() {
+  if (valuepet == "none") {
+    document.querySelector(".pet-checked").style.display = "block";
+    valuepet = "block";
+    document.querySelector(".pet").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".pet-checked").style.display = "none";
+    valuepet = "none";
+    document.querySelector(".pet").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+function ClickGuestsInput() {
+  if (valueguests == "none") {
+    document.querySelector(".guests-checked").style.display = "block";
+    valueguests = "block";
+    document.querySelector(".guests").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".guests-checked").style.display = "none";
+    valueguests = "none";
+    document.querySelector(".guests").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valuehallway = "none";
+var valueassistant = "none";
+function ClickHallwayInput() {
+  if (valuehallway == "none") {
+    document.querySelector(".hallway-checked").style.display = "block";
+    valuehallway = "block";
+    document.querySelector(".hallway").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".hallway-checked").style.display = "none";
+    valuehallway = "none";
+    document.querySelector(".hallway").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+function ClickAssistantInput() {
+  if (valueassistant == "none") {
+    document.querySelector(".assistant-checked").style.display = "block";
+    valueassistant = "block";
+    document.querySelector(".assistant").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".assistant-checked").style.display = "none";
+    valueassistant = "none";
+    document.querySelector(".assistant").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valuebreakfast = "none";
+function ClickBreakfastInput() {
+  if (valuebreakfast == "none") {
+    document.querySelector(".breakfast-checked").style.display = "block";
+    valuebreakfast = "block";
+    document.querySelector(".breakfast").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".breakfast-checked").style.display = "none";
+    valuebreakfast = "none";
+    document.querySelector(".breakfast").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valuedesk = "none";
+function ClickDeskInput() {
+  if (valuedesk == "none") {
+    document.querySelector(".desk-checked").style.display = "block";
+    valuedesk = "block";
+    document.querySelector(".desk").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".desk-checked").style.display = "none";
+    valuedesk = "none";
+    document.querySelector(".desk").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valuefeeding = "none";
+function ClickFeedingChairInput() {
+  if (valuefeeding == "none") {
+    document.querySelector(".feeding-checked").style.display = "block";
+    valuefeeding = "block";
+    document.querySelector(".feeding").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".feeding-checked").style.display = "none";
+    valuefeeding = "none";
+    document.querySelector(".feeding").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valuecrib = "none";
+function ClickCribInput() {
+  if (valuecrib == "none") {
+    document.querySelector(".crib-checked").style.display = "block";
+    valuecrib = "block";
+    document.querySelector(".crib").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".crib-checked").style.display = "none";
+    valuecrib = "none";
+    document.querySelector(".crib").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valueTV = "none";
+function ClickTVInput() {
+  if (valueTV == "none") {
+    document.querySelector(".TV-checked").style.display = "block";
+    valueTV = "block";
+    document.querySelector(".TV").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".TV-checked").style.display = "none";
+    valueTV = "none";
+    document.querySelector(".TV").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valueshampoo = "none";
+function ClickShampooInput() {
+  if (valueshampoo == "none") {
+    document.querySelector(".shampoo-checked").style.display = "block";
+    valueshampoo = "block";
+    document.querySelector(".shampoo").style.border = "1px solid #BC9CFF";
+  } else {
+    document.querySelector(".shampoo-checked").style.display = "none";
+    valueshampoo = "none";
+    document.querySelector(".shampoo").style.border =
+      "1px solid rgba(31, 32, 65, 0.25)";
+  }
+}
+var valueadditionalamenitie = "none";
+function ClickAdditionalAmenitie() {
+  if (valueadditionalamenitie == "none") {
+    document.querySelector(".additionalAmenities-checkbox").style.display =
+      "block";
+    valueadditionalamenitie = "block";
+    document.querySelector(".polublock_additionalAmenities").style.transform =
+      "rotate(225deg)";
+    document.querySelector(".polublock_additionalAmenities").style.top = "4px";
+  } else {
+    document.querySelector(".additionalAmenities-checkbox").style.display =
+      "none";
+    valueadditionalamenitie = "none";
+    document.querySelector(".polublock_additionalAmenities").style.transform =
+      "rotate(45deg)";
+    document.querySelector(".polublock_additionalAmenities").style.top = "0px";
+  }
 }

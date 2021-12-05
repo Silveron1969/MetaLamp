@@ -1482,9 +1482,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .smoke__houseRules_left-block {
   margin-top: 17px;
 }
+.smoke__houseRules_left-block,
+.pet__houseRules_left-block,
+.guests__houseRules_left-block,
+.breakfast_additionalAmenities-checkbox ,
+.desk_additionalAmenities-checkbox ,
+.feeding-chair_additionalAmenities-checkbox ,
+.crib_additionalAmenities-checkbox ,
+.TV_additionalAmenities-checkbox ,
+.shampoo_additionalAmenities-checkbox {
+  display: flex;
+  margin-bottom: 10px;
+}
+.additionalAmenities-checkbox{
+  margin-top: 18px;
+  display: none;
+}
 .smoke__houseRules_left-block span,
 .pet__houseRules_left-block span,
-.guests__houseRules_left-block span {
+.guests__houseRules_left-block span,
+.breakfast_additionalAmenities-checkbox span,
+.desk_additionalAmenities-checkbox span,
+.feeding-chair_additionalAmenities-checkbox span,
+.crib_additionalAmenities-checkbox span,
+.TV_additionalAmenities-checkbox span,
+.shampoo_additionalAmenities-checkbox span{
   font-family: Montserrat-normal;
   font-style: normal;
   font-weight: normal;
@@ -1495,7 +1517,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-left: 9.74px;
 }
 .availability__left-block_searchRoom-block {
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 .textTitle_availability {
   font-family: Montserrat;
@@ -1506,18 +1528,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
   color: #1f2041;
 }
-.text__hallway_availability {
-  margin-top: 17px;
+.hallway__availability_left-block{
+  margin-top: 16px;
 }
-.hallway__availability_left-block input {
-  margin-top: 20px;
-}
-.assistant__availability_left-block input {
-  margin-top: 14px;
-}
+
 .hallway__availability_left-block,
 .assistant__availability_left-block {
   display: flex;
+}
+.hallway__availability_left-block{
+  margin-bottom:10px;
 }
 .text__hallway_availability,
 .text__assistant_availability {
@@ -1539,9 +1559,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
-}
-.text__assistant_availability {
-  margin-top: 11px;
 }
 .conveniences__left-block_searchRoom-block {
   margin-top: 30px;
@@ -1572,7 +1589,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .input__dataOtel_left-block::after,
 .input__guestsBlock_left-block::after,
-.input__conveniences_left-block::after {
+.conveniencesImput__input_conveniences::after {
   position: absolute;
   content: "";
   top: 16px;
@@ -1584,21 +1601,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-top: 7px solid #fff;
   cursor: pointer;
 }
-.additionalAmenities__left-block_searchRoom-block::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 10px;
-  width: 0px;
-  height: 0px;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid #fff;
-  cursor: pointer;
-}
 .input__dataOtel_left-block::before,
 .input__guestsBlock_left-block::before,
-.input__conveniences_left-block::before {
+.conveniencesImput__input_conveniences::before {
   position: absolute;
   content: "";
   top: 19px;
@@ -1607,22 +1612,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 0px;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 7px solid #999;
+  border-top: 7px solid rgba(31, 32, 65, 0.5);
   border-radius: 50%;
   cursor: pointer;
 }
-.additionalAmenities__left-block_searchRoom-block::before {
+.polublock_additionalAmenities {
   position: absolute;
   content: "";
-  top: 3px;
-  right: 10px;
-  width: 0px;
-  height: 0px;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid #999;
-  border-radius: 50%;
+  top: 0px;
+  right: 13px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  border-left:none;
   cursor: pointer;
+  transform: rotate(45deg);
 }
 /*Окно номера*/
 .conveniencesContent__input_conveniences{
@@ -1742,6 +1747,36 @@ input[type="range"]::-moz-range-thumb {
 }
 input[type="range"]::-ms-thumb {
   pointer-events: all;
+}
+/*стиль checkbox*/
+.input{
+  width: 20px;
+  height: 20px; 
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.smoke-checked,
+.pet-checked,
+.guests-checked,
+.hallway-checked,
+.assistant-checked,
+.breakfast-checked,
+.desk-checked,
+.feeding-checked,
+.crib-checked,
+.TV-checked,
+.shampoo-checked{
+  display: none;
+  width: 6px;
+  height: 8px;
+  margin-left: 5px;
+  margin-top: 2px;
+  border: 2px solid #BC9CFF;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
 }
 /*Шрифты*/
 @font-face {

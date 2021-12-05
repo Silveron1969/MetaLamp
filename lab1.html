@@ -400,22 +400,30 @@
             <div class="houseRules__left-block_searchRoom-block">
               <span>правила дома</span>
               <div class="smoke__houseRules_left-block">
-                <input type="checkbox" name="" id="">
+                <div class="input smoke" onclick="ClickSmokeInput()">
+                  <div class="smoke-checked"></div>
+                </div>
                 <span>Можно курить</span>
               </div>
               <div class="pet__houseRules_left-block">
-                <input type="checkbox" name="" id="">
+                <div class="input pet" onclick="ClickPetInput()">
+                  <div class="pet-checked"></div>
+                </div>
                 <span>Можно с питомцами</span>
               </div>
-              <div class="guests__houseRules_left-block">
-                <input type="checkbox" name="" id="">
-                <span>Можно пригласить гостей <br> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;(до 10 человек)</span>
+              <div class="guests__houseRules_left-block" >
+                <div class="input guests" onclick="ClickGuestsInput()">
+                  <div class="guests-checked"></div>
+                </div>
+                <span>Можно пригласить гостей <br>(до 10 человек)</span>
               </div>
             </div>
             <div class="availability__left-block_searchRoom-block">
               <span class="textTitle_availability">доступность</span>
               <div class="hallway__availability_left-block">
-                  <input type="checkbox" name="" id="">
+                  <div class="input hallway" onclick="ClickHallwayInput()">
+                    <div class="hallway-checked"></div>
+                  </div>
                   <div class="text__hallway_availability">
                     <div class="text1__hallway_availability">
                       <span>Широкий коридор</span>                      
@@ -426,7 +434,9 @@
                   </div>
               </div>
               <div class="assistant__availability_left-block">
-                  <input type="checkbox" name="" id="">
+                  <div class="input assistant" onclick="ClickAssistantInput()">
+                    <div class="assistant-checked"></div>
+                  </div>
                   <div class="text__assistant_availability">
                     <div class="text1__hallway_availability">
                       <span>Помощник для инвалидов</span>
@@ -465,31 +475,56 @@
                             <button class="circle-button-plus_circle-button bathrooms_plus" onclick="ClickPlusBathrooms()">+</button>
                           </div>
                       </div>
-                    
                     </div>
-                    <!--
-                  <div class="button__choice_guests-choice">
-                    <div class="circle-button___button__choice_guests-choice">
-                      <button class="circle-button-minus adults_minus" onclick="ClickButtonMinusAdults()">-</button>
-                      <span class="adults-text">0</span>
-                      <button class="circle-button-plus adults_plus" onclick="ClickButtonPlusAdults()">+</button>
-                    </div>
-                    <div class="circle-button___button__choice_guests-choice">
-                      <button class="circle-button-minus children_minus" onclick="ClickButtonMinusChildren()">-</button>
-                      <span class="children-text">0</span>
-                      <button class="circle-button-plus children_plus" onclick="ClickButtonPlusChildren()">+</button>
-                    </div>
-                    <div class="circle-button___button__choice_guests-choice">
-                      <button class="circle-button-minus babies_minus" onclick="ClickButtonMinusBabies()">-</button>
-                      <span class="babie-text">0</span>
-                      <button class="circle-button-plus babies_plus" onclick="ClickButtonPlusBabies()">+</button>
-                    </div>
-                  </div>-->
                   </div>
               </div>
             </div>
-            <div class="additionalAmenities__left-block_searchRoom-block">
+            <div class="additionalAmenities__left-block_searchRoom-block" onclick="ClickAdditionalAmenitie()">
               <span>дополнительные удобства</span>
+              <div class="polublock_additionalAmenities"></div>
+            </div>
+            <div class="additionalAmenities-checkbox">
+              <div class="breakfast_additionalAmenities-checkbox">
+                <div class="input breakfast" onclick="ClickBreakfastInput()">
+                  <div class="breakfast-checked"></div>
+                </div>
+                <span>Завтрак</span>
+              </div>
+
+              <div class="desk_additionalAmenities-checkbox">
+                <div class="input desk" onclick="ClickDeskInput()">
+                  <div class="desk-checked"></div>
+                </div>
+                <span>Письменный стол</span>
+              </div>
+
+              <div class="feeding-chair_additionalAmenities-checkbox">
+                <div class="input feeding" onclick="ClickFeedingChairInput()">
+                  <div class="feeding-checked"></div>
+                  </div>
+                <span>Стул для кормления</span>
+              </div>
+
+              <div class="crib_additionalAmenities-checkbox">
+                <div class="input crib" onclick="ClickCribInput()">
+                  <div class="crib-checked"></div>
+                </div>
+                <span>Кроватка</span>
+              </div>
+
+              <div class="TV_additionalAmenities-checkbox">
+                <div class="input TV" onclick="ClickTVInput()">
+                  <div class="TV-checked"></div>
+                </div>
+                <span>Телевизор</span>
+              </div>
+
+              <div class="shampoo_additionalAmenities-checkbox">
+                <div class="input shampoo" onclick="ClickShampooInput()">
+                  <div class="shampoo-checked"></div>
+                </div>
+                <span>Шампунь</span>
+              </div>
             </div>
           </div>
           <div class="block-content_searchRoom-block">
