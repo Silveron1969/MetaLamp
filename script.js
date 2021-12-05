@@ -154,12 +154,19 @@ window.onload = function TodaysDate() {
   var mas = document.querySelectorAll(
     ".number_line-one , .number_line-two , .number_line-three , .number_line-four , .number_line-five"
   );
+  var mas1 = document.querySelectorAll(
+    ".number_line-one-after , .number_line-two-after , .number_line-three-after , .number_line-four-after , .number_line-five-after"
+  );
   for (let i = 0; i < mas.length; i++) {
     if (parseFloat(mas[i].textContent) == day) {
       mas[i].style.borderRadius = "22px";
       mas[i].style.background =
         "linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)";
       mas[i].style.color = "#fff";
+      mas1[i].style.borderRadius = "22px";
+      mas1[i].style.background =
+        "linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%)";
+      mas1[i].style.color = "#fff";
     }
   }
 };
@@ -301,7 +308,7 @@ function FocusInput(q) {
 }
 function ClickSearchButton() {
   document.querySelector(".kromeTitle").style.display = "none";
-  document.querySelector("body").style.background = "#fff";
+  document.querySelector("body").style.background = "#000";
   document.querySelector(".searchRoom-block").style.display = "block";
   document.querySelector(".description_main").style.marginTop = "1427px";
   var data1 = document.querySelector("#arrival___input_way__blocknumber")
@@ -601,4 +608,98 @@ function ClickAdditionalAmenitie() {
       "rotate(45deg)";
     document.querySelector(".polublock_additionalAmenities").style.top = "0px";
   }
+}
+function СallingСalendarAfter() {
+  document.querySelector(".after-calendar").style.display = "block";
+}
+function CheckBorderRadiusAfter() {
+  var value = 0;
+  var per = 0;
+  var mas = document.querySelectorAll(
+    ".number_line-one-after , .number_line-two-after , .number_line-three-after , .number_line-four-after , .number_line-five-after"
+  );
+  var check = 0;
+  for (let i = 0; i < mas.length; i++) {
+    if (mas[i].style.borderRadius == "50%") check = check + 1;
+  }
+  if (check > 2) return 0;
+  else {
+    for (let i = 0; i < mas.length; i++) {
+      mas[i].onclick = function () {
+        let now = new Date();
+        let day = now.getDate();
+        let month = now.getMonth();
+        let year = now.getFullYear();
+        var check = 0;
+        for (let i = 0; i < mas.length; i++) {
+          if (mas[i].style.borderRadius == "50%") check = check + 1;
+        }
+        if (check == 0)
+          document.querySelector(".dataInput__input_dataOtel").textContent =
+            mas[i].textContent + "." + month + "." + year;
+        if (check == 1)
+          document.querySelector(".dataInput__input_dataOtel").textContent =
+            document.querySelector(".dataInput__input_dataOtel").textContent +
+            " - " +
+            mas[i].textContent +
+            "." +
+            month +
+            "." +
+            year;
+        if (check == 2) return 0;
+        if (mas[i].textContent < day) return 0;
+        mas[i].style.background =
+          "linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)";
+        mas[i].style.borderRadius = "50%";
+        mas[i].style.color = "#fff";
+        //mas[i].style.zIndex = "2";
+      };
+      if (mas[i].style.borderRadius == "50%") {
+        per = per + 1;
+      }
+      if (mas[i].style.borderRadius == "50%" && per == 1) value = i + 1;
+    }
+    if (per == 1) return 0;
+
+    var after = document.querySelectorAll(".after__number_line-after");
+    for (let i = value - 1; i < after.length; i++) {
+      if (i == 6 || i == 13 || i == 20 || i == 27 || i == 34) {
+        after[i].style.width = "19.94px";
+      }
+      after[i].style.display = "block";
+      after[i].style.left = "20px";
+      after[i].style.zIndex = "-1";
+      if (
+        (i == 0 || i == 7 || i == 14 || i == 21 || i == 28) &&
+        i != value - 1
+      ) {
+        after[i].style.width = "59.5px";
+        after[i].style.left = "0px";
+      }
+      if (mas[i + 1].style.borderRadius == "50%") break;
+    }
+  }
+}
+function ResetButtonCalendarAfter() {
+  var mas = document.querySelectorAll(
+    ".number_line-one-after , .number_line-two-after , .number_line-three-after , .number_line-four-after , .number_line-five-after"
+  );
+  for (let i = 0; i < mas.length; i++) {
+    if (mas[i].style.borderRadius == "22px") continue;
+    mas[i].style.background = "none";
+    mas[i].style.borderRadius = "0%";
+    mas[i].style.color = "rgba(31, 32, 65, 0.5)";
+    document.querySelector(".dataInput__input_dataOtel").textContent =
+      "ДД.ММ.ГГГГ - ДД.ММ.ГГГГ";
+  }
+  var after = document.querySelectorAll(".after__number_line-after");
+  for (let i = 0; i < mas.length; i++) {
+    after[i].style.display = "none";
+    after[i].style.left = "0px";
+    after[i].style.width = "100%";
+  }
+}
+function AcceptButtonCalendarAfter(){
+  document.querySelector(".after-calendar").style.display =
+    "none";
 }
