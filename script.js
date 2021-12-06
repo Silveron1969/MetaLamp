@@ -308,9 +308,11 @@ function FocusInput(q) {
 }
 function ClickSearchButton() {
   document.querySelector(".kromeTitle").style.display = "none";
-  document.querySelector("body").style.background = "#000";
+  document.querySelector("body").style.background = "#fff";
   document.querySelector(".searchRoom-block").style.display = "block";
   document.querySelector(".description_main").style.marginTop = "1427px";
+  document.querySelector(".description_main").style.borderTop =
+    "1px solid rgba(31, 32, 65, 0.25)";
   var data1 = document.querySelector("#arrival___input_way__blocknumber")
     .textContent;
   var data2 = document.querySelector("#exit___input_way__blocknumber")
@@ -699,7 +701,6 @@ function ResetButtonCalendarAfter() {
     after[i].style.width = "100%";
   }
 }
-function AcceptButtonCalendarAfter(){
-  document.querySelector(".after-calendar").style.display =
-    "none";
+function AcceptButtonCalendarAfter() {
+  document.querySelector(".after-calendar").style.display = "none";
 }
